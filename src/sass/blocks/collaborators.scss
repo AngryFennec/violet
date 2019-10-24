@@ -1,4 +1,54 @@
 .collaborators {
     background-color: $purple;
     color: $text;
+    padding: 150px 100px;
+}
+
+.collaborators__header {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.collaborators__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+
+.collaborators__role {
+    color: rgba(255, 245, 218, 0.7);
+    margin: 0;
+}
+
+.collaborators__name {
+    position: relative;
+    margin: 0;
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 240px;
+        background-color: $text;
+    }
+}
+
+.collaborators__item {
+    min-width: 310px;
+    margin-bottom: 40px;
 }

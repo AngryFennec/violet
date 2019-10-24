@@ -4,10 +4,12 @@
   max-width: $desktop-large-width;
   //padding: 0 0 0 $desktop-padding;
   margin-left: auto;
-  margin-top: 474px;
+  margin-top: 340px;
   position: relative;
   z-index: 2;
   outline: 1px solid blue;
+  display: flex;
+  flex-direction: column;
 }
 
 

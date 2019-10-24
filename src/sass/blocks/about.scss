@@ -7,5 +7,46 @@
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
+    padding: 150px 100px;
+}
 
+.about__header {
+    position: relative;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    margin: 0;
+    padding-bottom: 16px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 240px;
+        background-color: $text-about;
+    }
+}
+
+.about__text-wrapper {
+    max-width: 370px;
+
+    & p {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        margin-top: 21px;
+    }
+}
+
+.about__text-block {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }

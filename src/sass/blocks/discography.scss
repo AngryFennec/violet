@@ -1,0 +1,62 @@
+.discography {
+    background-color: $blue;
+    color: $text;
+    padding: 100px;
+}
+
+.discography__header {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    margin-bottom: 10px;
+}
+
+.discography__year,
+.discography__name {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.discography__year {
+    margin-right: 55px;
+    margin-left: -3px;
+}
+
+.discography__name {
+    display: inline-block;
+    max-width: 370px;
+}
+.discography__album-block {
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 32px;
+}
+
+.discography__albums {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.discography__album {
+    position: relative;
+    padding: 48px 0;
+    &::after {
+        content:"";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 240px;
+        background-color: $text;
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+}
