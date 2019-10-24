@@ -1,0 +1,30 @@
+.promo {
+    background-color: $blue;
+}
+
+.promo__header {
+   font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 82px;
+    letter-spacing: 0.02em;
+}
+
+.promo__blockquote,
+.promo_blockquote-author {
+    text-align: right;
+    max-width: 527px;
+    width: 100%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.02em;
+
+    & b {
+        display: block;
+    }
+}

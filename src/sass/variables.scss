@@ -1,7 +1,7 @@
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
-$desktop-large-width: 1920px;
+$desktop-large-width: 960px;
 $tablet-width: 768px;
 $mobile-width: 375px;
 $mobile-min-width: 320px;
@@ -18,3 +18,11 @@ $font-family: "Montserrat", $reserve-font-family;
 
 
 $style-change-duration: 0.2s;
+
+//colors
+$blue: #291449;
+$text: #FFF5DA;
+$text-about: #291449;
+$text-contact: #230045;
+$light: #FFEDDD;
+$purple: #471C3E;
