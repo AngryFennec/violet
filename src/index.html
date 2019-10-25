@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="css/style.min.css">
   </head>
+  <!--&#8209;-->
 
   <body class="page-body">
     <header class="header">
@@ -151,18 +152,32 @@
         <section class="subscribe">
           <h2 class="subscribe__header">Sign up for exclusive updates for Violet & the Sun News</h2>
           <form class="subscribe__form" action="" method="post">
-            <input type="email" name="email" id="email">
-            <label for="email">email</label>
-            <input type="text" name="name" id="name">
-            <label for="name">name</label>
-            <input type="date" name="birthday" id="birthday">
-            <label for="birthday">birthday</label>
-            <input type="text" name="country" id="country">
-            <label for="country">country</label>
-            <input type="text" name="zip-code" id="zip-code">
-            <label for="zip-code">zip-code</label>
-            <input type="phone" name="phone" id="phone">
-            <label for="phone">phone number</label>
+            <ul class="subscribe__form-list">
+              <li class="subscribe__form-item">
+                <input class="subscribe__form-input subscribe__form-input--email" type="email" name="email" id="email" placeholder="enter your email">
+                <label class="subscribe__form-label" for="email">email address</label>
+              </li>
+              <li class="subscribe__form-item">
+                <input class="subscribe__form-input subscribe__form-input--name" type="text" name="name" id="name" placeholder="Alan Smithee">
+                <label class="subscribe__form-label" for="name">name</label>
+              </li>
+              <li class="subscribe__form-item">
+                <input class="subscribe__form-input subscribe__form-input--birthday" type="date" name="birthday" id="birthday" placeholder="01.01.1990">
+                <label class="subscribe__form-label" for="birthday">birthday</label>
+              </li>
+              <li class="subscribe__form-item">
+                <input class="subscribe__form-input subscribe__form-input--country" type="text" name="country" id="country" placeholder="Austria">
+                <label class="subscribe__form-label" for="country">country</label>
+              </li>
+              <li class="subscribe__form-item">
+                <input class="subscribe__form-input subscribe__form-input--zip" type="text" name="zip-code" id="zip-code" placeholder="31-589">
+                <label class="subscribe__form-label" for="zip-code">zip-code</label>
+              </li>
+              <li class="subscribe__form-item">
+                <input class="subscribe__form-input subscribe__form-input--phone" type="phone" name="phone" id="phone" placeholder="+48733160082">
+                <label class="subscribe__form-label" for="phone">phone number</label>
+              </li>
+            </ul>
             <button class="subscribe__submit" type="submit">Submit</button>
           </form>
         </section>
