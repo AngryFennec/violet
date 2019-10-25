@@ -7,7 +7,6 @@
   margin-top: 340px;
   position: relative;
   z-index: 2;
-  outline: 1px solid blue;
   display: flex;
   flex-direction: column;
 }
@@ -24,4 +23,25 @@
   background-color: $blue;
   position: relative;
   z-index: 1;
+
+  &--nocolor {
+    min-height: 1006px;
+    background: url('../img/decor-one.jpg') 0 -900px no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    &::after {
+      content: "";
+      background: url('../img/leaves-colloborators.png') no-repeat 0 -300px;
+      background-size: 100% 160%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 3;
+    }
+  }
 }
+
