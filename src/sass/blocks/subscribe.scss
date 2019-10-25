@@ -1,7 +1,10 @@
 .subscribe {
     background-color: $light;
     color: $text-contact;
-    padding: 150px 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 265px;
 }
 
 .subscribe__header {
@@ -10,9 +13,74 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 33px;
+    margin-bottom: 103px;
 }
 
 .subscribe__form {
     display: flex;
     flex-direction: column;
+    padding-left: 7px;
+}
+
+.subscribe__form-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+.subscribe__form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 37px;
+}
+
+.subscribe__form-input {
+  border: none;
+  border-bottom: 1px solid $text-contact;
+  background-color: transparent;
+  max-width: 360px;
+  margin-bottom: 5px;
+
+  &::placeholder {
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+
+color: $text-contact;
+  }
+
+  &--birthday {
+    max-width: 170px;
+  }
+  &--zip {
+    max-width: 90px;
+  }
+  &--phone {
+    max-width: 170px;
+  }
+}
+
+.subscribe__form-label {
+  font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+
+color: #8B8492;
+}
+
+.subscribe__submit {
+  font-family: "DM Serif Display";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  border: none;
+  background: transparent;
+  width: 20%;
+  text-align: left;
+  padding-left: 0;
+  color: $text-contact;
 }
