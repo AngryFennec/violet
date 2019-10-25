@@ -1,11 +1,65 @@
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Lato";
   font-style: normal;
+  font-display: swap;
+  font-weight: 100;
+  src: local("Lato"), url("../font/Lato-Thin.woff2") format("woff2"), url("../font/Lato-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: local("Lato"), url("../font/Lato-Light.woff2") format("woff2"), url("../font/Lato-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-display: swap;
   font-weight: 400;
+  src: local("Lato"), url("../font/Lato-Regular.woff2") format("woff2"), url("../font/Lato-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local("Lato"), url("../font/Lato-Bold.woff2") format("woff2"), url("../font/Lato-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: local("Lato"), url("../font/Lato-Black.woff2") format("woff2"), url("../font/Lato-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("DM Serif Display"), url("../font/DMSerifDisplay-Regular.woff2") format("woff2"), url("../font/DMSerifDisplay-Regular.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: local("DM Serif Display"), url("../font/DMSerifDisplay-Italic.woff2") format("woff2"), url("../font/DMSerifDisplay-Italic.woff") format("woff");
+}
+
+
+/*@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100;
   font-display: swap;
   src:
-    local("Montserrat Regular"),
-    local("Montserrat-Regular"),
+    local("Lato"),
     url("../font/montserrat-400.woff2") format("woff2"),
     url("../font/montserrat-400.woff") format("woff");
 }
@@ -45,3 +99,4 @@
     url("../font/montserrat-800.woff2") format("woff2"),
     url("../font/montserrat-800.woff") format("woff");
 }
+*/
