@@ -15,3 +15,13 @@
 
 @include mobile {
 }
+
+.decor-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: url('../img/leaves.png') no-repeat 0 0;
+  background-size: 100% 82%;
+  background-color: $blue;
+  position: relative;
+  z-index: 1;
+}

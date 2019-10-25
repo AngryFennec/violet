@@ -1,7 +1,7 @@
 .collaborators {
     background-color: $purple;
     color: $text;
-    padding: 150px 100px;
+    padding: 150px 160px 110px 100px;
 }
 
 .collaborators__header {
@@ -10,12 +10,14 @@
     font-weight: normal;
     font-size: 36px;
     line-height: 49px;
+    margin: 0;
 }
 
 .collaborators__list {
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-top: 77px;
 
     display: flex;
     flex-wrap: wrap;
@@ -31,24 +33,37 @@
 
 .collaborators__role {
     color: rgba(255, 245, 218, 0.7);
-    margin: 0;
+    margin: 5px 0 0 0;
 }
 
 .collaborators__name {
     position: relative;
+
     margin: 0;
     &::after {
         position: absolute;
         content: "";
-        bottom: 0;
+        bottom: -2px;
         left: 0;
         height: 1px;
         width: 240px;
         background-color: $text;
     }
+
+    &--width {
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: -2px;
+            left: 0;
+            height: 1px;
+            width: 310px;
+            background-color: $text;
+        }
+    }
 }
 
 .collaborators__item {
     min-width: 310px;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
 }
