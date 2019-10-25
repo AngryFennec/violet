@@ -1,16 +1,16 @@
 .discography {
-    background-color: $blue;
     color: $text;
     padding: 100px;
+    position: relative;
+    z-index: 3;
 }
-
 .discography__header {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
     line-height: 49px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 .discography__year,
@@ -23,9 +23,9 @@
 }
 
 .discography__year {
-    margin-right: 55px;
-    margin-left: -3px;
+    margin-right: 60px;
 }
+
 
 .discography__name {
     display: inline-block;
@@ -34,7 +34,7 @@
 .discography__album-block {
     display: flex;
     margin-top: 28px;
-    margin-bottom: 32px;
+    margin-bottom: 11px;
 }
 
 .discography__albums {
@@ -46,6 +46,7 @@
 .discography__album {
     position: relative;
     padding: 48px 0;
+    display: flex;
     &::after {
         content:"";
         position: absolute;
@@ -59,4 +60,38 @@
     &:last-child::after {
         display: none;
     }
+    &--active {
+        display: block;
+
+        & .discography__year {
+        margin-right: 317px;
+        }
+    }
+}
+
+.discography__album-songs {
+    list-style: none;
+    
+}
+
+.discography__album-song {
+    margin-bottom: 18px;
+
+    & a {
+        display: block;
+        color: $text;
+        text-decoration: none;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+    }
+}
+.discography__album-skin {
+    margin-right: 10px;
+    flex-shrink: 0;
+    width: 340px;
+    height: 340px;
 }

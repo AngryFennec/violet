@@ -1,9 +1,9 @@
 .promo {
-    background-color: $blue;
+    position: relative;
     padding: 150px 100px 50px 100px;
     display: flex;
     flex-direction: column;
-    outline: 1px solid blue;
+    z-index: 3;
 }
 
 .promo__header {
