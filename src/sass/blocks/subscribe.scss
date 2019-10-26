@@ -44,6 +44,15 @@
   background-color: transparent;
   max-width: 360px;
   margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 22px;
+  outline:none;
+
+  color: $text-contact;
+
+  &:focus {
+    outline:none;
+  }
 
   &::placeholder {
     font-style: normal;
