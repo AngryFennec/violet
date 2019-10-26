@@ -1,7 +1,32 @@
 .header {
     position: fixed;
     top: 100px;
-    left: 100px;
-    outline: 1px solid red;
+    left: 155px;
     z-index: 2;
+    height: 100%;
+}
+
+.header__menu-list {
+    display: flex;
+    list-style: none;
+    margin: 140px 0 0 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__menu-item a {
+    display: block;
+    background-color: white;
+    width: 5px;
+    height: 5px;
+}
+
+.header__menu-item--active a {
+    width: 10px;
+    height: 10px;
+}
+
+.header__menu-item {
+    margin-bottom: 35px;
 }
