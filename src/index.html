@@ -207,9 +207,9 @@
         this.initPixi = function() {
             document.body.appendChild(r.view), r.view.style.objectFit = "cover", r.view.style.width = "100%", r.view.style.height = "100%", r.view.style.top = "0", r.view.style.left = "0", n.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT, i.filters = [o], n.scale.x = 2, n.scale.y = 2, n.rotation = 250, o.scale.set(t.displaceScale[0], t.displaceScale[1]), i.addChild(n)
         };
-        var s = new PIXI.Texture.fromImage('img/bg.jpg'),
+        var s = new PIXI.Texture.fromImage('img/bg-new.jpg'),
             a = new PIXI.Sprite(s);
-        a.anchor.set(.5), a.width = innerWidth, a.height = innerWidth, a.position.x = innerWidth / 2, a.y = innerHeight / 2, i.addChild(a);
+        a.anchor.set(0.5), a.width = innerWidth, a.height = innerWidth, a.position.x = innerWidth/2 , a.y = innerHeight/2, i.addChild(a);
         var u = new PIXI.ticker.Ticker;
         u.autoStart = !0, u.add(function(e) {
             const s = o.scale.x;
@@ -515,14 +515,15 @@
     
         
     
-    <canvas width="1920" height="938" style="touch-action: none; cursor: inherit; object-fit: cover; width: 100%; height: 100vh; top: 0px; left: 0px;"></canvas>
+    <canvas  style="touch-action: none; cursor: inherit; object-fit: cover; width: 100%; height: auto; top: 0px; left: 0px;"></canvas>
     <style>
-    canvas {
-    display: block;
-    position: fixed;
-    height: 100vh!important;
-    width: 100%;
-}</style>
+        canvas {
+          display: block;
+          position: fixed;
+          height: 100vh!important;
+          width: 100%;
+      } 
+    </style>
   </body>
 
 </html>
