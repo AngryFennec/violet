@@ -10,7 +10,7 @@
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
-    padding: 150px 100px 130px 100px;
+    padding: 15.31% 10.2% 13.26% 10.2%;
 }
 
 .about__header {
@@ -36,6 +36,10 @@
 
 .about__text-wrapper {
     max-width: 370px;
+
+    &:first-child {
+        margin-right: 20px;
+    }
 
     & p {
         font-family: 'Lato';

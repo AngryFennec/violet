@@ -2,10 +2,10 @@
     background-color: $light;
     background: url('../img/contacts-back.jpg') 0 0 no-repeat;
     color: $text-contact;
-    padding-top: 117px;
-    padding-bottom: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 11.93%;
+    padding-bottom: 5.1%;
+    padding-left: 10.2%;
+    padding-right: 10.2%;
 }
 
 .contacts__header {
@@ -71,4 +71,10 @@
   font-size: 18px;
   line-height: 22px;
   margin-top: 0;
+}
+
+@media (max-width: 1190px) {
+    .contacts__list {
+        flex-direction: column;
+    }
 }
