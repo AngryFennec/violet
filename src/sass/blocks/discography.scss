@@ -1,6 +1,6 @@
 .discography {
     color: $text;
-    padding: 100px;
+    padding: 10.2%;
     position: relative;
     z-index: 3;
 }
@@ -18,8 +18,8 @@
     font-family: 'DM Serif Display', serif;
     font-style: italic;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 49px;
+    font-size: 1.8vw;
+    line-height: 2.55vw;
 }
 
 .discography__year {
@@ -29,13 +29,13 @@
 
 .discography__name {
     display: inline-block;
-    max-width: 370px;
+    max-width: 48%;
 }
 .discography__album-block {
     display: flex;
     flex-wrap: wrap;
     margin-top: 28px;
-    margin-bottom: 11px;
+   
 }
 
 .discography__albums {
@@ -65,7 +65,7 @@
         display: block;
 
         & .discography__year {
-        margin-right: 317px;
+        margin-right: 42.35%;
         }
     }
 }
@@ -95,4 +95,11 @@
     flex-shrink: 0;
     width: 340px;
     height: 340px;
+    margin-bottom: 11px;
+}
+
+@media (max-width: 1967px) {
+    .discography__album-skin{
+        margin-bottom: 50px;
+    }
 }
