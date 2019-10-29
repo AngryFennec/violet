@@ -76,7 +76,7 @@
         bottom: 0;
         height:100% ;
         width: 0;
-        background-color: rgba(255,255,255,0.2);
+        background-color: rgba(255,255,255,0.1);
     }
 
     &:last-child::after {
@@ -112,10 +112,10 @@
 }
 
 .discography__album-song {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 
     & a {
-        display: block;
+        display: inline-block;
         color: $text;
         text-decoration: none;
         font-family: 'Lato';
@@ -124,6 +124,22 @@
         font-size: 18px;
         line-height: 22px;
         letter-spacing: 0.02em;
+        width: auto;
+    }
+}
+
+.discography__album-song:hover a {
+    position: relative;
+   
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: $text;
     }
 }
 
@@ -138,17 +154,17 @@
 .discography__album:hover {
 
     & .discography__skin {
-    transition: 4s ease;
+    transition: 3s ease;
     opacity: 1
     }
 
     &::before {
-        transition: 2s ease;
+        transition: 1.5s ease;
         width: 59%;
     }
 
     &:last-child::before {
-        transition: 2s ease;
+        transition: 1.5s ease;
         width: 71%;
     }
 }

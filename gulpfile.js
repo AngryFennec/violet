@@ -93,9 +93,9 @@ gulp.task('img:copy', function () {
 gulp.task('img:minify', function () {
   return gulp.src('build/img/**/*.{png,jpg,svg}')
     .pipe(imgMinify([
-      // imgMinify.optipng(
-      //   {optimizationLevel: 3}
-      // ),
+      imgMinify.optipng(
+        {optimizationLevel: 3}
+      ),
       imgMinify.jpegtran(
         { progressive: true }
       ),
