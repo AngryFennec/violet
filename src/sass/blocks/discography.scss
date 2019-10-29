@@ -4,6 +4,7 @@
     position: relative;
     z-index: 3;
 }
+
 .discography__header {
     font-family: 'DM Serif Display';
     font-style: normal;
@@ -31,6 +32,7 @@
     display: inline-block;
     max-width: 48%;
 }
+
 .discography__album-block {
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +50,7 @@
     position: relative;
     padding: 48px 0;
     display: flex;
+
     &::after {
         content:"";
         position: absolute;
@@ -61,6 +64,7 @@
     &:last-child::after {
         display: none;
     }
+
     &--active {
         display: block;
 
@@ -68,6 +72,14 @@
         margin-right: 42.35%;
         }
     }
+}
+
+.discography__skin {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    opacity: 0;
 }
 
 .discography__album-songs {
@@ -90,12 +102,22 @@
         letter-spacing: 0.02em;
     }
 }
+
 .discography__album-skin {
     margin-right: 10px;
     flex-shrink: 0;
     width: 340px;
     height: 340px;
     margin-bottom: 11px;
+}
+
+.discography__album:hover {
+    transition: 3s ease;
+
+    & .discography__skin {
+    transition: 3s ease;
+    opacity: 1
+    }
 }
 
 @media (max-width: 1967px) {
@@ -119,13 +141,46 @@
         margin-right: 30px;
 
     }
+    
+
+    .discography__year {
+        margin-left: 130px;
+    }
     .discography__album {
-        
         &--active {
     
             & .discography__year {
-            margin-right: 335px;
+                margin-left: 0;
+                margin-right: 335px;
             }
+        }
+    }
+    .discography__skin {
+        width: 100px;
+        height: 100px;
+        order: -1;
+        left: 0;
+        top: 20px;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .discography__album:last-child {
+        & .discography__name {
+            margin-top: -20px;;
+        }
+    }
+}
+
+@media (max-width: 858px) {
+    .discography__album-skin {
+        width: 250px;
+        height: 250px;
+    }
+
+    .discography__album--active  {
+        & .discography__year {
+            margin-right: 260px;
         }
     }
 }
