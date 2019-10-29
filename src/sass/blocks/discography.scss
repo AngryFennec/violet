@@ -184,3 +184,30 @@
         }
     }
 }
+
+@media (max-width: 745px) {
+    .discography__album-songs {
+        padding-left: 0;
+    }
+
+    .discography__album {
+        &--active {
+    
+            & .discography__year {
+                margin-left: 0;
+                margin-right: 230px;
+            }
+        }
+    }
+}
+
+@media (max-width: 695px) {
+    .discography__album {
+        &--active {
+    
+            & .discography__year {
+                margin-right: 50px;
+            }
+        }
+    }
+}
