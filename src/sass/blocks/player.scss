@@ -1,9 +1,19 @@
 #player {
     width: 500px;
     height: 200px;
-    outline: 1px solid red;
     position: fixed;
     bottom: 20px;
     left: 100px;
     z-index: 4;
+    background-color: rgba(255,255,255,0.4);
+}
+
+@media (max-width: 1025px) {
+    #player {
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
 }

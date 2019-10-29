@@ -27,10 +27,9 @@
           <li class="header__menu-item"><a href="#"></a></li>
         </ul>
       </nav>
+      <div id="player"></div>
     </header>
     <main>
-      <!-- <div id="picture"></div> -->
-      <div id="player"></div>
       <div class="container">
         <h1 class="visually-hidden">Violet & the Sun</h1>
         <div class="decor-wrapper">
@@ -206,17 +205,19 @@
             n = new PIXI.Sprite.fromImage('img/clouds.jpg'),
             o = new PIXI.filters.DisplacementFilter(n);
         this.initPixi = function() {
-            document.body.appendChild(r.view), r.view.style.objectFit = "cover", r.view.style.width = "100%", r.view.style.height = "100%", r.view.style.top = "0", r.view.style.left = "0", n.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT, i.filters = [o], n.scale.x = 2, n.scale.y = 2, n.rotation = 250, o.scale.set(t.displaceScale[0], t.displaceScale[1]), i.addChild(n)
+            document.body.appendChild(r.view), r.view.style.objectFit = "cover", r.view.style.width = "100%", r.view.style.height = "100%", r.view.style.top = "0", r.view.style.left = "0", r.view.style.transform = "scale(1.1)",n.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT, i.filters = [o], n.scale.x = 2, n.scale.y = 2, n.rotation = 250, o.scale.set(t.displaceScale[0], t.displaceScale[1]), i.addChild(n)
         };
-        var s = new PIXI.Texture.fromImage('img/bg-new.jpg'),
+        var s = new PIXI.Texture.fromImage('img/bg.jpg'),
             a = new PIXI.Sprite(s);
-        a.anchor.set(0.5), a.width = innerWidth, a.height = innerWidth, a.position.x = innerWidth/2 , a.y = innerHeight/2, i.addChild(a);
+        a.anchor.set(0.5), a.width = 800, a.height = 650, a.position.x = innerWidth/2 , a.y = innerHeight/2,  i.addChild(a);
         var u = new PIXI.ticker.Ticker;
+        console.log(a.scale.x);
+        console.log(a.scale.y);
         u.autoStart = !0, u.add(function(e) {
             const s = o.scale.x;
             n.x += t.autoPlaySpeed[0] * e, n.y += t.autoPlaySpeed[1], s > 0 && (o.scale.set(s - t.autoPlaySpeed[2] * dispSpeed), dispSpeed = (.99 * dispSpeed).toFixed(3));
             const u = (window.pageYOffset || document.documentElement.scrollTop) / (document.body.offsetHeight - innerHeight) * 100;
-            zoomAmount = .01 * u, isLoaded && a.scale.x <= 1 && !imageScale ? imageScale = {
+            zoomAmount = -.01 * u, isLoaded && a.scale.x <= 1 && !imageScale ? imageScale = {
                 x: a.scale.x,
                 y: a.scale.y
             } : imageScale && (isEdge ? (zoomAmount = 0 / (document.body.offsetHeight - innerHeight) * .01 * 100, a.scale.set(imageScale.x * ((23.25 - 7 * zoomAmount * 1.5) / 10).toFixed(3), imageScale.y * ((15.5 - 7 * zoomAmount) / 10).toFixed(3))) : a.scale.set(imageScale.x * ((23.25 - 7 * zoomAmount * 1.5) / 10).toFixed(3), imageScale.y * ((15.5 - 7 * zoomAmount) / 10).toFixed(3))), r.render(i), isLoaded = !0
@@ -498,13 +499,6 @@
     });
     </script>
         <script>
-            // var isIpad = navigator.userAgent.match(/iPad/i) != null,
-            //     image = 'images/bg.jpg';
-
-            // if (isIpad) {
-            //     image = 'images/bg_ipd.jpg';
-            // }
-
             new CanvasSlideshow({
                 sprite: 'https://avatars.mds.yandex.net/get-pdb/70729/b1d38bbd-fd72-40f8-8091-658ab44898ba/s1200',
                 displacementImage: 'img/leaves.png',
@@ -516,14 +510,9 @@
 
 
 
-    <canvas  style="touch-action: none; cursor: inherit; object-fit: cover; width: 100%; height: auto; top: 0px; left: 0px;"></canvas>
+    <canvas  style="touch-action: none; cursor: inherit; object-fit: cover; width: 100%; height: 100vh; top: 0px; left: 0px;"></canvas>
     <style>
-        canvas {
-          display: block;
-          position: fixed;
-          height: 100vh!important;
-          width: 100%;
-      }
+        
     </style>
   </body>
 

@@ -10,8 +10,8 @@
     display: flex;
     list-style: none;
     position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 50%;
+    transform: translateY(50%);
     left: calc(8% + 100px);
     padding: 0;
     flex-direction: column;
@@ -37,4 +37,37 @@
 .header__logo-block img {
     width: 200px;
     height: 200px;
+}
+
+@media (max-width: 1025px) {
+    .header {
+        position: relative;
+        top: 0;
+        left: 0;
+        background: url(../img/bg.jpg) no-repeat center 0;
+        background-size: cover;
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+
+    .header__logo-block img {
+        position: fixed;
+        top: 50px;
+        left: 50px;
+    }
+
+    .header__menu-list {
+        position: absolute;
+        left: 50%;
+        bottom: 40px;
+        transform: translateX(-50%) translateY(0);
+        height: 30px;
+        flex-direction: row;
+        // align-items: center;
+    }
+    
+    .header__menu-item {
+        margin-left: 35px;
+        margin-bottom: 0;
+    }
 }

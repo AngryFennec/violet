@@ -103,3 +103,29 @@
         margin-bottom: 50px;
     }
 }
+
+
+@media (max-width: 1025px) {
+    .discography__year,
+    .discography__name {
+        font-family: 'DM Serif Display', serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 3.51vw;
+        line-height: 4.49vw;
+    }
+
+    .discography__album-skin {
+        margin-right: 30px;
+
+    }
+    .discography__album {
+        
+        &--active {
+    
+            & .discography__year {
+            margin-right: 335px;
+            }
+        }
+    }
+}
