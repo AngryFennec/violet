@@ -6,44 +6,42 @@
     color: $text-contact;
     padding-left: 10.2%;
     padding-right: 10.2%;
-    padding-top: 1.53%;
-    padding-bottom: 10.2%;
+    padding-top: 5.23%;
+    padding-bottom: 15.5%;
 }
 
 .subscribe__header {
     font-family: 'DM Serif Display';
-    font-style: italic;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 33px;
-    margin-bottom: 103px;
+    font-size: 36px;
+    line-height: 49px;
+    margin-bottom: 75px;
 }
 
 .subscribe__form {
     display: flex;
     flex-direction: column;
-    padding-left: 7px;
 }
 
 .subscribe__form-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 35px;
+  margin-bottom: 120px;
 }
 
 .subscribe__form-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 37px;
+  margin-bottom: 39px;
 }
 
 .subscribe__form-input {
   border: none;
   border-bottom: 1px solid $text-contact;
   background-color: transparent;
-  max-width: 360px;
-  margin-bottom: 5px;
+  max-width: 370px;
+  margin-bottom: 3px;
   font-size: 18px;
   line-height: 22px;
   outline:none;
