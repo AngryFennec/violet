@@ -3,7 +3,7 @@
     background: url('../img/contacts-back.jpg') 0 0 no-repeat;
     background-size: cover;
     color: $text-contact;
-    padding-top: 11.93%;
+    padding-top: 7%;
     padding-bottom: 5.1%;
     padding-left: 10.2%;
     padding-right: 10.2%;
@@ -15,7 +15,7 @@
     font-weight: normal;
     font-size: 36px;
     line-height: 49px;
-    margin-bottom: 45px;
+    margin-bottom: 57px;
 }
 
 .contacts__list {
@@ -44,16 +44,25 @@
 }
 
 .contacts__item {
-  margin-right: 12.5%;
+  //margin-right: 32.5%;
+  width: 240px;
+  margin-right: 20%;
+  //margin-right: 250px;
+  margin-bottom: 5px;
 
-  &:nth-child(2) {
-    margin-right: 6%;
+  &:nth-child(2n) {
+    margin-right: 0;
 
     .contacts__value {
         &::after {
             width: 165px;
         }
     }
+  }
+
+  &:nth-child(3) {
+    //margin-right: 20%;
+
   }
 
   &:last-child {
