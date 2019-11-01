@@ -17,3 +17,183 @@
 
     }
 }
+
+.player {
+  background-color: transparent;
+  font-family: "DM Serif Display";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 49px;
+  color: #FFFFFF;
+
+
+
+
+
+  div#list-screen {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: none; }
+
+  div.player-header {
+    background-color: #141920;
+    padding: 15px;
+    text-align: center;
+    height: 25px;
+    position: relative;
+    margin-top: 40px;
+    cursor: pointer;
+    color: white;
+    font-family: "Lato", sans-serif; }
+
+
+  div#player-bottom {
+    padding-left: 25px;
+    padding-right: 25px;
+  display: flex;}
+    div#player-bottom div#control-container {
+      height: 60px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    display: flex;}
+    div#player-bottom div#control-container div#prev-container {
+      height: 60px;
+      padding-top: 18px; }
+      div#player-bottom div#control-container div#prev-container div#previous {
+        background: url("../img/fbd-btn.svg") no-repeat center center;
+        width: 40px;
+        height: 24px;
+        cursor: pointer;
+        margin: auto; }
+    div#player-bottom div#control-container div#play-pause-container {
+          height: 60px; }
+      div#player-bottom div#control-container div#play-pause-container div#play-pause {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        margin: auto; }
+        div#player-bottom div#control-container div#play-pause-container div#play-pause.amplitude-playing {
+          background: url("../img/pause-btn.svg") no-repeat center center; }
+        div#player-bottom div#control-container div#play-pause-container div#play-pause.amplitude-paused {
+          background: url("../img/play-btn.svg") no-repeat center center; }
+    div#player-bottom div#control-container div#next-container {
+      height: 60px;
+      padding-top: 18px; }
+      div#player-bottom div#control-container div#next-container div#next {
+        background: url("../img/ffd-btn.svg") no-repeat center center;
+        width: 40px;
+        height: 24px;
+        cursor: pointer;
+        margin: auto; }
+          div#player-bottom div#control-container div#repeat-container {
+      float: left;
+      width: 20%;
+      height: 60px;
+      padding-top: 20px; }
+      div#player-bottom div#control-container div#repeat-container div#repeat {
+        background: url("../img/fbd-btn.svg") no-repeat center center;
+        width: 40px;
+        height: 20px;
+        cursor: pointer;
+        margin: auto;
+        opacity: 0.7; }
+    div#player-bottom div#volume-container {
+      padding-bottom: 20px;
+      text-align: center;
+    display: flex;
+  align-items: center;}
+      div#player-bottom div#volume-container img {
+        display: block;
+        float: left;
+        margin-top: -9px; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider {
+        width: calc(100% - 30px);
+        -webkit-appearance: none;
+        display: block;
+        margin-left: 10px;
+      background: transparent;
+    height: 20px;}
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider:focus {
+        outline: none; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider::-webkit-slider-runnable-track {
+        width: 75%;
+        height: 2px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: #cfd8dc; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider::-webkit-slider-thumb {
+        height: 18px;
+        width: 18px;
+        background-color: white;
+        cursor: pointer;
+        margin-top: -8px;
+        -webkit-appearance: none;
+        border-radius: 20px; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider:focus::-webkit-slider-runnable-track {
+        background: #cfd8dc; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider::-moz-range-track {
+        width: 100%;
+        height: 1px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: #cfd8dc; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider::-moz-range-thumb {
+        height: 18px;
+        width: 18px;
+        background-color: white;
+        cursor: pointer;
+        margin-top: -8px;
+        -webkit-appearance: none;
+        border-radius: 20px; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider::-ms-track {
+        width: 100%;
+        height: 2px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: #cfd8dc;
+        border-width: 15px 0;
+        color: transparent;
+        border-color: #192029; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider::-ms-fill-lower {
+        background: transparent;
+        border-radius: 2.6px; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider::-ms-fill-upper {
+        background: transparent;
+        border-radius: 2.6px; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider::-ms-thumb {
+        height: 18px;
+        width: 18px;
+        background-color: white;
+        cursor: pointer;
+        margin-top: 0px;
+        border: 20px; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider:focus::-ms-fill-lower {
+        background: #cfd8dc; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider::-ms-fill-upper {
+        background: #cfd8dc; }
+      div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider::-ms-tooltip {
+        display: none; }
+
+
+
+  @-moz-document url-prefix() {
+    div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider {
+      margin-top: 0px; } }
+  @supports (-ms-ime-align: auto) {
+    div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider {
+      margin-top: -4px;
+      height: 30px;
+      background-color: #192029 !important; } }
+  @media all and (-ms-high-contrast: none) {
+    div#player-bottom div#volume-container *::-ms-backdrop,
+    div#flat-black-player-container div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider {
+      margin-top: -8px;
+      background-color: #192029 !important;
+      background: #192029 !important; } }
+}
