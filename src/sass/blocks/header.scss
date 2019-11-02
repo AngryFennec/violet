@@ -108,3 +108,17 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .header {
+        &::after {
+            background: url('../img/bg-mobile.jpg') no-repeat center center;
+            background-size: cover;
+        }
+    }
+
+    .header__logo-block img {
+        width: 83px;
+        height: 83px;
+    }
+}

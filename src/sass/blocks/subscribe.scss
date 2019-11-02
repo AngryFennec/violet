@@ -108,3 +108,14 @@ color: #8B8492;
   width: 85%;
   max-width: 645px;
 }
+
+@media(max-width: 500px) {
+  .subscribe {
+    padding: 30px 10px;
+  }
+
+  .subscribe__header {
+    font-size: 36px;
+    line-height: 49px;
+  }
+}
