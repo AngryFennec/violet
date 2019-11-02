@@ -20,11 +20,11 @@
       </div>
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item header__menu-item--active"><a href="#"></a></li>
-          <li class="header__menu-item"><a href="#"></a></li>
-          <li class="header__menu-item"><a href="#"></a></li>
-          <li class="header__menu-item"><a href="#"></a></li>
-          <li class="header__menu-item"><a href="#"></a></li>
+          <li class="header__menu-item header__menu-item--active"><a href="#promo"></a></li>
+          <li class="header__menu-item"><a href="#discography"></a></li>
+          <li class="header__menu-item"><a href="#about"></a></li>
+          <li class="header__menu-item"><a href="#collaborators"></a></li>
+          <li class="header__menu-item"><a href="#contacts"></a></li>
         </ul>
       </nav>
       <div id="player"></div>
@@ -33,14 +33,14 @@
       <div class="container">
         <h1 class="visually-hidden">Violet & the Sun</h1>
         <div class="decor-wrapper">
-          <section class="promo">
+          <section class="promo" id="promo">
             <h2 class="promo__header  wow fadeInUp">Explore the Enigmatic and Lush Music</h2>
             <blockquote class="promo__blockquote  wow fadeInUp">Violet and the Sun's music is so original,<br> with the extensive synth work,
               trippy sounds,<br> orchestral instrumentation, playful mallet parts, <br>and lush vocal arrangements—all done with a
               pop sensibility.</blockquote>
             <p class="promo_blockquote-author  wow fadeInUp"><b>— Ben Leinbach,</b> award-winning producer, composer and engineer</p>
           </section>
-          <section class="discography">
+          <section class="discography" id="discography">
             <h2 class="discography__header wow fadeInUp">Discography</h2>
             <ul class="discography__albums">
               <li class="discography__album discography__album--active wow fadeInUp">
@@ -85,7 +85,7 @@
             </ul>
           </section>
         </div>
-        <section class="about">
+        <section class="about" id="about">
           <h2 class="about__header wow fadeInUp">About</h2>
           <div class="about__text-block">
             <div class="about__text-wrapper  wow fadeInUp">
@@ -111,7 +111,7 @@
           </div>
         </section>
         <div class="decor-wrapper--nocolor">
-          <section class="collaborators">
+          <section class="collaborators" id="collaborators">
             <h2 class="collaborators__header wow fadeInUp">Collaborators</h2>
             <ul class="collaborators__list">
               <li class="collaborators__item  wow fadeInUp">
@@ -147,7 +147,7 @@
 
         </div>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <h2 class="contacts__header">Stay in touch</h2>
           <ul class="contacts__list  wow fadeInUp">
             <li class="contacts__item  wow fadeInUp">
@@ -198,7 +198,7 @@
               </li>
             </ul>
 
-            <b class="subscribe__alert">By providing a few details about yourself, we can learn who and where our audience is for future tours, etc.
+            <b class="subscribe__alert wow fadeInUp">By providing a few details about yourself, we can learn who and where our audience is for future tours, etc.
 Don't worry! We promise not to share this information with anyone.</b>
             <button class="subscribe__submit  wow fadeInUp" type="submit">Submit</button>
           </form>
@@ -514,24 +514,63 @@ Don't worry! We promise not to share this information with anyone.</b>
     });
     </script>
     <script>
-                    console.log(document.body.clientWidth);
-        if (document.body.clientWidth > 1025) {
-            console.log('сработка');
+        //             console.log(document.body.clientWidth);
+        // if (document.body.clientWidth > 1025) {
+        //     console.log('сработка');
             new CanvasSlideshow({
                 autoPlay: true,
                 autoPlaySpeed: [1, 4, 2.2],
                 displaceScale: [200, 50]
             });
-        }
+        // }
 
     </script>
-
-
-
-    <canvas style="touch-action: none; cursor: inherit; object-fit: cover; width: 100%; height: 100vh; top: 0px; left: 0px;"></canvas>
-<script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+    <script>
+        $(function() {
+            function scrollBlock(){
+                var windowTop = $(window).scrollTop();
+                var promoTop = Math.floor($('#promo').offset().top);
+                var discographyTop = Math.floor($('#discography').offset().top);
+                var aboutTop = Math.floor($('#about').offset().top);
+                var collaboratorsTop = Math.floor($('#collaborators').offset().top);
+                var contactsTop = Math.floor($('#contacts').offset().top);
+               
+                if (windowTop >= contactsTop ) {
+                    $(".header__menu-item").removeClass('header__menu-item--active');
+                    $('a[href="#contacts"').parent().addClass('header__menu-item--active');
+                } else if (windowTop >= collaboratorsTop) {
+                    $(".header__menu-item").removeClass('header__menu-item--active');
+                    $('a[href="#collaborators"').parent().addClass('header__menu-item--active');
+                } else if (windowTop >= aboutTop) {
+                    $(".header__menu-item").removeClass('header__menu-item--active');
+                    $('a[href="#about"').parent().addClass('header__menu-item--active');
+                } else if (windowTop >= discographyTop) {
+                    $(".header__menu-item").removeClass('header__menu-item--active');
+                    $('a[href="#discography"').parent().addClass('header__menu-item--active');
+                } else if (windowTop > 0) {
+                    $(".header__menu-item").removeClass('header__menu-item--active');
+                    $('a[href="#promo"').parent().addClass('header__menu-item--active');
+                }
+            }
+            
+            scrollBlock();
+
+            $(window).on('scroll', scrollBlock);
+
+            $(".header__menu-item a").click(function () {
+                var elementClick = $(this).attr("href");
+                $(".header__menu-item").removeClass('header__menu-item--active');
+                $(this).parent().addClass('header__menu-item--active');
+                var destination = $(elementClick).offset().top;
+                $('html, body').animate({ scrollTop: destination }, 500);
+                return false;
+            });
+        });
     </script>
   </body>
 
