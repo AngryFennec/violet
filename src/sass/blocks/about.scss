@@ -64,3 +64,35 @@
         margin-top: 13.27%;
     }
 }
+
+@media (max-width: 500px) {
+    .about {
+        margin-top: 0;
+        padding: 90px 8px 85px 10px;
+    }
+
+    .about__header {
+        font-size: 28px;
+        line-height: 38px;
+
+        &::after {
+            bottom: 8px;
+        }
+    }
+
+    .about__text-block {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .about__text-wrapper {
+        max-width: 100%;
+
+        & p {
+            margin-top: 5px;
+            margin-bottom: 18px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}

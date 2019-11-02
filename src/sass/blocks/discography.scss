@@ -289,3 +289,73 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .discography {
+        padding: 10px 8px;
+    }
+
+    .discography__header {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 22px;
+    }
+
+    .discography__name,
+    .discography__year {
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    .discography__album-block {
+        margin-top: 8px;
+    }
+
+    .discography__album-skin {
+        width: 100%;
+        max-width: 359px;
+        height: auto;
+        margin-bottom: 6px;
+    }
+
+    .discography__album-song a {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 9px 0;
+    }
+
+    .discography__album-songs {
+        margin-bottom: 41px;
+    }
+
+    .discography__link {
+        flex-direction: column;
+        padding: 32px 0 46px 0;
+    }
+
+    .discography__year {
+        margin-left: 110px;
+    }
+
+    .discography__name {
+        margin-left: 110px;
+        max-width: 100%;
+    }
+
+    .discography__album {
+        &--active {
+    
+            & .discography__name {
+                margin-left: 28px;
+            }
+        }
+
+        &:last-child .discography__name {
+            margin-top: 0;
+        }
+    }
+
+    .discography__album:last-child .discography__link {
+        padding: 20px 0 30px 0;
+    }
+}
