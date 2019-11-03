@@ -2,1381 +2,1058 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Violet & the Sun</title>
-  <!--<link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">-->
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <title>Violet & the Sun</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
-<!--&#8209;-->
 
 <body class="page-body">
-  <header class="header">
-    <div class="header__logo-block">
-      <img src="img/logo.svg" alt="logo">
-    </div>
-    <nav class="header__menu">
-      <ul class="header__menu-list">
-        <li class="header__menu-item header__menu-item--active"><a href="#promo"></a></li>
-        <li class="header__menu-item"><a href="#discography"></a></li>
-        <li class="header__menu-item"><a href="#about"></a></li>
-        <li class="header__menu-item"><a href="#collaborators"></a></li>
-        <li class="header__menu-item"><a href="#contacts"></a></li>
-      </ul>
-    </nav>
-    <div class="player" id="player">
-      <div id="flat-black-player-container">
-        <div id="list-screen" class="slide-in-top">
-
-          <div id="list">
-            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
-              <span class="song-number-now-playing">
-                <span class="number">1</span>
-              </span>
-
-              <div class="song-meta-container">
-                <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="0"></span>
-                <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="0"></span></span>
-              </div>
-
-              <span class="song-duration">
-                3:30
-              </span>
-            </div>
-            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
-              <span class="song-number-now-playing">
-                <span class="number">2</span>
-              </span>
-
-              <div class="song-meta-container">
-                <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="1"></span>
-                <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="1"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="1"></span></span>
-              </div>
-
-              <span class="song-duration">
-                3:16
-              </span>
-            </div>
-            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
-              <span class="song-number-now-playing">
-                <span class="number">3</span>
-
-              </span>
-
-              <div class="song-meta-container">
-                <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="2"></span>
-                <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="2"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="2"></span></span>
-              </div>
-
-              <span class="song-duration">
-                3:32
-              </span>
-            </div>
-            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3">
-              <span class="song-number-now-playing">
-                <span class="number">4</span>
-
-              </span>
-
-              <div class="song-meta-container">
-                <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="3"></span>
-                <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="3"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="3"></span></span>
-              </div>
-
-              <span class="song-duration">
-                3:30
-              </span>
-            </div>
-            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="4">
-              <span class="song-number-now-playing">
-                <span class="number">5</span>
-
-              </span>
-
-              <div class="song-meta-container">
-                <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="4"></span>
-                <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="4"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="4"></span></span>
-              </div>
-
-              <span class="song-duration">
-                5:12
-              </span>
-            </div>
-            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="5">
-              <span class="song-number-now-playing">
-                <span class="number">6</span>
-
-              </span>
-
-              <div class="song-meta-container">
-                <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="5"></span>
-                <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="5"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="5"></span></span>
-              </div>
-
-              <span class="song-duration">
-                5:29
-              </span>
-            </div>
-            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="6">
-              <span class="song-number-now-playing">
-                <span class="number">7</span>
-
-              </span>
-
-              <div class="song-meta-container">
-                <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="6"></span>
-                <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="6"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="6"></span></span>
-              </div>
-
-              <span class="song-duration">
-                5:29
-              </span>
-            </div>
-            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="7">
-              <span class="song-number-now-playing">
-                <span class="number">8</span>
-
-              </span>
-
-              <div class="song-meta-container">
-                <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="7"></span>
-                <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="7"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="7"></span></span>
-              </div>
-
-              <span class="song-duration">
-                2:39
-              </span>
-            </div>
-            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="8">
-              <span class="song-number-now-playing">
-                <span class="number">9</span>
-              </span>
-
-              <div class="song-meta-container">
-                <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="8"></span>
-                <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="8"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="8"></span></span>
-              </div>
-
-              <span class="song-duration">
-                1:00
-              </span>
-            </div>
-            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="9">
-              <span class="song-number-now-playing">
-                <span class="number">10</span>
-              </span>
-
-              <div class="song-meta-container">
-                <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="9"></span>
-                <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="9"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="9"></span></span>
-              </div>
-
-              <span class="song-duration">
-                5:25
-              </span>
-            </div>
-            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
-              <span class="song-number-now-playing">
-                <span class="number">11</span>
-              </span>
-
-              <div class="song-meta-container">
-                <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="10"></span>
-                <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="10"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="10"></span></span>
-              </div>
-
-              <span class="song-duration">
-                5:40
-              </span>
-            </div>
-          </div>
-
-          <div id="list-screen-footer">
-
-            <div class="list-controls">
-              <div class="list-previous amplitude-prev"></div>
-              <div class="list-play-pause amplitude-play-pause"></div>
-              <div class="list-next amplitude-next"></div>
-            </div>
-          </div>
+    <header class="header">
+        <div class="header__logo-block">
+            <img src="img/logo.svg" alt="logo">
         </div>
-        <div id="player-screen">
-          <div id="player-bottom">
-            <div id="control-container">
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-item header__menu-item--active"><a href="#promo"></a></li>
+                <li class="header__menu-item"><a href="#discography"></a></li>
+                <li class="header__menu-item"><a href="#about"></a></li>
+                <li class="header__menu-item"><a href="#collaborators"></a></li>
+                <li class="header__menu-item"><a href="#contacts"></a></li>
+            </ul>
+        </nav>
+        <div class="player" id="player">
+            <div id="flat-black-player-container">
+                <div id="list-screen" class="slide-in-top">
 
-              <div id="prev-container">
-                <div class="amplitude-prev" id="previous"></div>
-              </div>
+                    <div id="list">
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
+                            <span class="song-number-now-playing">
+                                <span class="number">1</span>
+                            </span>
 
-              <div id="play-pause-container">
-                <div class="amplitude-play-pause" id="play-pause"></div>
-              </div>
+                            <div class="song-meta-container">
+                                <span class="song-name" data-amplitude-song-info="name"
+                                    data-amplitude-song-index="0"></span>
+                                <span class="song-artist-album"><span data-amplitude-song-info="artist"
+                                        data-amplitude-song-index="0"></span> - <span data-amplitude-song-info="album"
+                                        data-amplitude-song-index="0"></span></span>
+                            </div>
 
-              <div id="next-container">
-                <div class="amplitude-next" id="next"></div>
-              </div>
+                            <span class="song-duration">
+                                3:30
+                            </span>
+                        </div>
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
+                            <span class="song-number-now-playing">
+                                <span class="number">2</span>
+                            </span>
 
+                            <div class="song-meta-container">
+                                <span class="song-name" data-amplitude-song-info="name"
+                                    data-amplitude-song-index="1"></span>
+                                <span class="song-artist-album"><span data-amplitude-song-info="artist"
+                                        data-amplitude-song-index="1"></span> - <span data-amplitude-song-info="album"
+                                        data-amplitude-song-index="1"></span></span>
+                            </div>
+
+                            <span class="song-duration">
+                                3:16
+                            </span>
+                        </div>
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
+                            <span class="song-number-now-playing">
+                                <span class="number">3</span>
+
+                            </span>
+
+                            <div class="song-meta-container">
+                                <span class="song-name" data-amplitude-song-info="name"
+                                    data-amplitude-song-index="2"></span>
+                                <span class="song-artist-album"><span data-amplitude-song-info="artist"
+                                        data-amplitude-song-index="2"></span> - <span data-amplitude-song-info="album"
+                                        data-amplitude-song-index="2"></span></span>
+                            </div>
+
+                            <span class="song-duration">
+                                3:32
+                            </span>
+                        </div>
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3">
+                            <span class="song-number-now-playing">
+                                <span class="number">4</span>
+
+                            </span>
+
+                            <div class="song-meta-container">
+                                <span class="song-name" data-amplitude-song-info="name"
+                                    data-amplitude-song-index="3"></span>
+                                <span class="song-artist-album"><span data-amplitude-song-info="artist"
+                                        data-amplitude-song-index="3"></span> - <span data-amplitude-song-info="album"
+                                        data-amplitude-song-index="3"></span></span>
+                            </div>
+
+                            <span class="song-duration">
+                                3:30
+                            </span>
+                        </div>
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="4">
+                            <span class="song-number-now-playing">
+                                <span class="number">5</span>
+
+                            </span>
+
+                            <div class="song-meta-container">
+                                <span class="song-name" data-amplitude-song-info="name"
+                                    data-amplitude-song-index="4"></span>
+                                <span class="song-artist-album"><span data-amplitude-song-info="artist"
+                                        data-amplitude-song-index="4"></span> - <span data-amplitude-song-info="album"
+                                        data-amplitude-song-index="4"></span></span>
+                            </div>
+
+                            <span class="song-duration">
+                                5:12
+                            </span>
+                        </div>
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="5">
+                            <span class="song-number-now-playing">
+                                <span class="number">6</span>
+
+                            </span>
+
+                            <div class="song-meta-container">
+                                <span class="song-name" data-amplitude-song-info="name"
+                                    data-amplitude-song-index="5"></span>
+                                <span class="song-artist-album"><span data-amplitude-song-info="artist"
+                                        data-amplitude-song-index="5"></span> - <span data-amplitude-song-info="album"
+                                        data-amplitude-song-index="5"></span></span>
+                            </div>
+
+                            <span class="song-duration">
+                                5:29
+                            </span>
+                        </div>
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="6">
+                            <span class="song-number-now-playing">
+                                <span class="number">7</span>
+
+                            </span>
+
+                            <div class="song-meta-container">
+                                <span class="song-name" data-amplitude-song-info="name"
+                                    data-amplitude-song-index="6"></span>
+                                <span class="song-artist-album"><span data-amplitude-song-info="artist"
+                                        data-amplitude-song-index="6"></span> - <span data-amplitude-song-info="album"
+                                        data-amplitude-song-index="6"></span></span>
+                            </div>
+
+                            <span class="song-duration">
+                                5:29
+                            </span>
+                        </div>
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="7">
+                            <span class="song-number-now-playing">
+                                <span class="number">8</span>
+
+                            </span>
+
+                            <div class="song-meta-container">
+                                <span class="song-name" data-amplitude-song-info="name"
+                                    data-amplitude-song-index="7"></span>
+                                <span class="song-artist-album"><span data-amplitude-song-info="artist"
+                                        data-amplitude-song-index="7"></span> - <span data-amplitude-song-info="album"
+                                        data-amplitude-song-index="7"></span></span>
+                            </div>
+
+                            <span class="song-duration">
+                                2:39
+                            </span>
+                        </div>
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="8">
+                            <span class="song-number-now-playing">
+                                <span class="number">9</span>
+                            </span>
+
+                            <div class="song-meta-container">
+                                <span class="song-name" data-amplitude-song-info="name"
+                                    data-amplitude-song-index="8"></span>
+                                <span class="song-artist-album"><span data-amplitude-song-info="artist"
+                                        data-amplitude-song-index="8"></span> - <span data-amplitude-song-info="album"
+                                        data-amplitude-song-index="8"></span></span>
+                            </div>
+
+                            <span class="song-duration">
+                                1:00
+                            </span>
+                        </div>
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="9">
+                            <span class="song-number-now-playing">
+                                <span class="number">10</span>
+                            </span>
+
+                            <div class="song-meta-container">
+                                <span class="song-name" data-amplitude-song-info="name"
+                                    data-amplitude-song-index="9"></span>
+                                <span class="song-artist-album"><span data-amplitude-song-info="artist"
+                                        data-amplitude-song-index="9"></span> - <span data-amplitude-song-info="album"
+                                        data-amplitude-song-index="9"></span></span>
+                            </div>
+
+                            <span class="song-duration">
+                                5:25
+                            </span>
+                        </div>
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+                            <span class="song-number-now-playing">
+                                <span class="number">11</span>
+                            </span>
+
+                            <div class="song-meta-container">
+                                <span class="song-name" data-amplitude-song-info="name"
+                                    data-amplitude-song-index="10"></span>
+                                <span class="song-artist-album"><span data-amplitude-song-info="artist"
+                                        data-amplitude-song-index="10"></span> - <span data-amplitude-song-info="album"
+                                        data-amplitude-song-index="10"></span></span>
+                            </div>
+
+                            <span class="song-duration">
+                                5:40
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="list-screen-footer">
+
+                        <div class="list-controls">
+                            <div class="list-previous amplitude-prev"></div>
+                            <div class="list-play-pause amplitude-play-pause"></div>
+                            <div class="list-next amplitude-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="player-screen">
+                    <div id="player-bottom">
+                        <div id="control-container">
+
+                            <div id="prev-container">
+                                <div class="amplitude-prev" id="previous"></div>
+                            </div>
+
+                            <div id="play-pause-container">
+                                <div class="amplitude-play-pause" id="play-pause"></div>
+                            </div>
+
+                            <div id="next-container">
+                                <div class="amplitude-next" id="next"></div>
+                            </div>
+
+                        </div>
+
+                        <div id="volume-container">
+                            <img alt="volume" src="./img/volume-btn.svg" width=36 height=36 /><input type="range"
+                                class="amplitude-volume-slider" step=".1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="meta-data-container">
+                    <span class="now-playing-name" data-amplitude-song-info="name"></span>
+                </div>
             </div>
 
-            <div id="volume-container">
-              <img alt="volume" src="./img/volume-btn.svg" width=36 height=36 /><input type="range" class="amplitude-volume-slider" step=".1" />
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="visually-hidden">Violet & the Sun</h1>
+            <div class="decor-wrapper">
+                <section class="promo" id="promo">
+                    <h2 class="promo__header  wow fadeInUp">Explore the Enigmatic and Lush Music</h2>
+                    <blockquote class="promo__blockquote  wow fadeInUp">Violet and the Sun's music is so original,<br>
+                        with the extensive synth work,
+                        trippy sounds,<br> orchestral instrumentation, playful mallet parts, <br>and lush vocal
+                        arrangements—all done with a
+                        pop sensibility.</blockquote>
+                    <p class="promo_blockquote-author  wow fadeInUp"><b>— Ben Leinbach,</b> award-winning producer,
+                        composer and engineer</p>
+                </section>
+                <section class="discography" id="discography">
+                    <h2 class="discography__header wow fadeInUp">Discography</h2>
+                    <ul class="discography__albums">
+                        <li class="discography__album discography__album--active wow fadeInUp">
+                            <span class="discography__year">2019</span>
+                            <span class="discography__name">Violet & the Sun</span>
+                            <div class="discography__album-block">
+                                <img class="discography__album-skin" src="img/skin.jpg" alt="album-skin">
+                                <ul class="discography__album-songs">
+                                    <li class="discography__album-song"><a href="#">(Tear A Hole In) This Plastic Night
+                                        </a></li>
+                                    <li class="discography__album-song"><a href="#">Amaurot</a></li>
+                                    <li class="discography__album-song"><a href="#">All I Am Is Love</a></li>
+                                    <li class="discography__album-song"><a href="#">To Watch You Grow Old</a></li>
+                                    <li class="discography__album-song"><a href="#">Violet and The Sun</a></li>
+                                    <li class="discography__album-song"><a href="#">Stardust</a></li>
+                                    <li class="discography__album-song"><a href="#">Constant</a></li>
+                                    <li class="discography__album-song"><a href="#">George and Martha</a></li>
+                                    <li class="discography__album-song"><a href="#">The Ruby Song</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="discography__album wow fadeInUp">
+                            <a href="#" class="discography__link">
+                                <span class="discography__year">2017</span>
+                                <span class="discography__name">Tiny Machines</span>
+                                <img class="discography__skin" src="img/skin-03.jpg" alt="skin of album">
+                            </a>
+                        </li>
+                        <li class="discography__album wow fadeInUp">
+                            <a href="#" class="discography__link">
+                                <span class="discography__year">2014</span>
+                                <span class="discography__name">Dr. hummingbird</span>
+                                <img class="discography__skin" src="img/skin-02.jpg" alt="skin of album">
+                            </a>
+                        </li>
+                        <li class="discography__album wow fadeInUp">
+                            <a href="#" class="discography__link">
+                                <span class="discography__year">2014</span>
+                                <span class="discography__name">Things Are About to Get a Lot More Possible</span>
+                                <img class="discography__skin" src="img/skin-01.jpg" alt="skin of album">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
             </div>
-          </div>
-        </div>
-        <div class="meta-data-container">
-          <span class="now-playing-name" data-amplitude-song-info="name"></span>
-        </div>
-      </div>
-
-    </div>
-  </header>
-  <main>
-    <div class="container">
-      <h1 class="visually-hidden">Violet & the Sun</h1>
-      <div class="decor-wrapper">
-        <section class="promo" id="promo">
-          <h2 class="promo__header  wow fadeInUp">Explore the Enigmatic and Lush Music</h2>
-          <blockquote class="promo__blockquote  wow fadeInUp">Violet and the Sun's music is so original,<br> with the extensive synth work,
-            trippy sounds,<br> orchestral instrumentation, playful mallet parts, <br>and lush vocal arrangements—all done with a
-            pop sensibility.</blockquote>
-          <p class="promo_blockquote-author  wow fadeInUp"><b>— Ben Leinbach,</b> award-winning producer, composer and engineer</p>
-        </section>
-        <section class="discography" id="discography">
-          <h2 class="discography__header wow fadeInUp">Discography</h2>
-          <ul class="discography__albums">
-            <li class="discography__album discography__album--active wow fadeInUp">
-              <span class="discography__year">2019</span>
-              <span class="discography__name">Violet & the Sun</span>
-              <div class="discography__album-block">
-                <img class="discography__album-skin" src="img/skin.jpg" alt="album-skin">
-                <ul class="discography__album-songs">
-                  <li class="discography__album-song"><a href="#">(Tear A Hole In) This Plastic Night </a></li>
-                  <li class="discography__album-song"><a href="#">Amaurot</a></li>
-                  <li class="discography__album-song"><a href="#">All I Am Is Love</a></li>
-                  <li class="discography__album-song"><a href="#">To Watch You Grow Old</a></li>
-                  <li class="discography__album-song"><a href="#">Violet and The Sun</a></li>
-                  <li class="discography__album-song"><a href="#">Stardust</a></li>
-                  <li class="discography__album-song"><a href="#">Constant</a></li>
-                  <li class="discography__album-song"><a href="#">George and Martha</a></li>
-                  <li class="discography__album-song"><a href="#">The Ruby Song</a></li>
+            <section class="about" id="about">
+                <h2 class="about__header wow fadeInUp">About</h2>
+                <div class="about__text-block">
+                    <div class="about__text-wrapper  wow fadeInUp">
+                        <p>Violet and the Sun is an ethereal pop band whose musical inspirations are as enigmatic and
+                            original as they
+                            are lush and eclectic.</p>
+                        <p>Bandleader, singer-songwriter and producer-engineer April White has relied on playing the
+                            piano and
+                            singing to express herself in private most of her life, as if writing in a diary to find
+                            herself and revive
+                            her spirit. She brings her inner life to the foreground in this iconic and eponymous,
+                            breakthrough album,
+                            "Violet and the Sun."</p>
+                        <p>April called upon several friends, collaborators and skilled musicians to contribute to the
+                            colorful
+                            soundscapes the album explores, who journeyed to her rustic log cabin studio for recording
+                            sessions</p>
+                    </div>
+                    <div class="about__text-wrapper  wow fadeInUp">
+                        <p>The album would not be complete without the stylings, inspirations, ideas and talents of
+                            Aaron Day, Jon
+                            Margulies and Christine Bucher—or the finesse of award-winning composer, producer, engineer,
+                            and
+                            multi-instrumentalist Ben Leinbach, whose final touches and mixing/mastering skills took
+                            each song to a new
+                            level.</p>
+                        <p>Living on an acreage near the South Rim of the Grand Canyon with her beloved dogs, cats and
+                            dwarf goats
+                            provides April with an endless source of joy and wonder. The miles of uninterrupted pinyon
+                            pines by day and
+                            countless stars by night give her a sense of interconnectedness and place in the universe,
+                            which is
+                            intimately reflected in this break-out album.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="decor-wrapper--nocolor">
+                <section class="collaborators" id="collaborators">
+                    <h2 class="collaborators__header wow fadeInUp">Collaborators</h2>
+                    <ul class="collaborators__list">
+                        <li class="collaborators__item  wow fadeInUp">
+                            <p class="collaborators__name">Aaron Day</p>
+                            <p class="collaborators__role">vocals, clarinet, percussion</p>
+                        </li>
+                        <li class="collaborators__item  wow fadeInUp">
+                            <p class="collaborators__name">Christine Bucher</p>
+                            <p class="collaborators__role">cello</p>
+                        </li>
+                        <li class="collaborators__item wow fadeInUp">
+                            <p class="collaborators__name">Ben Leinbach</p>
+                            <p class="collaborators__role">mixing, mastering, bass</p>
+                        </li>
+                        <li class="collaborators__item wow fadeInUp">
+                            <p class="collaborators__name">Birkan Yavuz</p>
+                            <p class="collaborators__role">violin</p>
+                        </li>
+                        <li class="collaborators__item wow fadeInUp">
+                            <p class="collaborators__name">Jon Margulies</p>
+                            <p class="collaborators__role">guitar, bass</p>
+                        </li>
+                        <li class="collaborators__item wow fadeInUp">
+                            <p class="collaborators__name">Kashaeda Sutton</p>
+                            <p class="collaborators__role">violin</p>
+                        </li>
+                        <li class="collaborators__item wow fadeInUp">
+                            <p class="collaborators__name collaborators__name--width">Elena Gonzalez-Putney-Wamble</p>
+                            <p class="collaborators__role">violin</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <section class="contacts" id="contacts">
+                <h2 class="contacts__header">Stay in touch</h2>
+                <ul class="contacts__list  wow fadeInUp">
+                    <li class="contacts__item  wow fadeInUp">
+                        <p class="contacts__value"><a href="#">Violet and the Sun</a></p>
+                        <p class="contacts__type">YouTube</p>
+                    </li>
+                    <li class="contacts__item  wow fadeInUp">
+                        <p class="contacts__value"><a href="#">Our Bandcamp</a></p>
+                        <p class="contacts__type">Zazzle shop</p>
+                    </li>
+                    <li class="contacts__item wow fadeInUp">
+                        <p class="contacts__value"><a
+                                href="mailto:contact@violetandthesun.com">contact@violetandthesun.com</a></p>
+                        <p class="contacts__type">e-mail</p>
+                    </li>
+                    <li class="contacts__item wow fadeInUp">
+                        <p class="contacts__value"><a href="tel:3478709402">347-870-9402</a></p>
+                        <p class="contacts__type">mobile</p>
+                    </li>
                 </ul>
-              </div>
-            </li>
-            <li class="discography__album wow fadeInUp">
-              <a href="#" class="discography__link">
-                <span class="discography__year">2017</span>
-                <span class="discography__name">Tiny Machines</span>
-                <img class="discography__skin" src="img/skin-03.jpg" alt="skin of album">
-              </a>
-            </li>
-            <li class="discography__album wow fadeInUp">
-              <a href="#" class="discography__link">
-                <span class="discography__year">2014</span>
-                <span class="discography__name">Dr. hummingbird</span>
-                <img class="discography__skin" src="img/skin-02.jpg" alt="skin of album">
-              </a>
-            </li>
-            <li class="discography__album wow fadeInUp">
-              <a href="#" class="discography__link">
-                <span class="discography__year">2014</span>
-                <span class="discography__name">Things Are About to Get a Lot More Possible</span>
-                <img class="discography__skin" src="img/skin-01.jpg" alt="skin of album">
-              </a>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <section class="about" id="about">
-        <h2 class="about__header wow fadeInUp">About</h2>
-        <div class="about__text-block">
-          <div class="about__text-wrapper  wow fadeInUp">
-            <p>Violet and the Sun is an ethereal pop band whose musical inspirations are as enigmatic and original as they
-              are lush and eclectic.</p>
-            <p>Bandleader, singer-songwriter and producer-engineer April White has relied on playing the piano and
-              singing to express herself in private most of her life, as if writing in a diary to find herself and revive
-              her spirit. She brings her inner life to the foreground in this iconic and eponymous, breakthrough album,
-              "Violet and the Sun."</p>
-            <p>April called upon several friends, collaborators and skilled musicians to contribute to the colorful
-              soundscapes the album explores, who journeyed to her rustic log cabin studio for recording sessions</p>
-          </div>
-          <div class="about__text-wrapper  wow fadeInUp">
-            <p>The album would not be complete without the stylings, inspirations, ideas and talents of Aaron Day, Jon
-              Margulies and Christine Bucher—or the finesse of award-winning composer, producer, engineer, and
-              multi-instrumentalist Ben Leinbach, whose final touches and mixing/mastering skills took each song to a new
-              level.</p>
-            <p>Living on an acreage near the South Rim of the Grand Canyon with her beloved dogs, cats and dwarf goats
-              provides April with an endless source of joy and wonder. The miles of uninterrupted pinyon pines by day and
-              countless stars by night give her a sense of interconnectedness and place in the universe, which is
-              intimately reflected in this break-out album.</p>
-          </div>
+            </section>
+            <section class="subscribe">
+                <h2 class="subscribe__header  wow fadeInUp">Sign up for our News</h2>
+                <form class="subscribe__form" action="" method="post">
+                    <ul class="subscribe__form-list">
+                        <li class="subscribe__form-item  wow fadeInUp">
+                            <input class="subscribe__form-input subscribe__form-input--email" type="email" name="email"
+                                id="email" placeholder="enter your email*" required>
+                            <label class="subscribe__form-label" for="email">email address</label>
+                        </li>
+                        <li class="subscribe__form-item  wow fadeInUp">
+                            <input class="subscribe__form-input subscribe__form-input--name" type="text" name="name"
+                                id="name" placeholder="Alan Smithee">
+                            <label class="subscribe__form-label" for="name">name</label>
+                        </li>
+                        <li class="subscribe__form-item  wow fadeInUp">
+                            <input class="subscribe__form-input subscribe__form-input--birthday" type="date"
+                                name="birthday" id="birthday">
+                            <label class="subscribe__form-label" for="birthday">birthday</label>
+                        </li>
+                        <li class="subscribe__form-item  wow fadeInUp">
+                            <input class="subscribe__form-input subscribe__form-input--country" type="text"
+                                name="country" id="country" placeholder="Austria">
+                            <label class="subscribe__form-label" for="country">country</label>
+                        </li>
+                        <li class="subscribe__form-item  wow fadeInUp">
+                            <input class="subscribe__form-input subscribe__form-input--zip" type="text" name="zip-code"
+                                id="zip-code" placeholder="31-589">
+                            <label class="subscribe__form-label" for="zip-code">zip-code</label>
+                        </li>
+                        <li class="subscribe__form-item  wow fadeInUp">
+                            <input class="subscribe__form-input subscribe__form-input--phone" type="tel" name="phone"
+                                id="phone" placeholder="+48733160082">
+                            <label class="subscribe__form-label" for="phone">phone number</label>
+                        </li>
+                    </ul>
+
+                    <b class="subscribe__alert wow fadeInUp">By providing a few details about yourself, we can learn who
+                        and where our audience is for future tours, etc.
+                        Don't worry! We promise not to share this information with anyone.</b>
+                    <button class="subscribe__submit  wow fadeInUp" type="submit">Submit</button>
+                </form>
+            </section>
+
+            <section class="song">
+                <h2 class="song__header wow fadeInUp">(Tear a Hole in) This Plastic Night</h2>
+                <div class="song__text-block">
+                    <p class="wow fadeInUp">
+                        Deep in my bones there’s a fear <br>
+                        Part of me wants to make it real <br>
+                        How do you shut this thing off? <br>
+                        How do you find where it starts?
+                    </p>
+                    <p class="wow fadeInUp">
+                        This world I know is tearing at the seams <br>
+                        The fabric split, the hologram blew steam, <br>
+                        Cartoon shrapnel flew across the screen, <br>
+                        Chroma bled like technicolor dreams
+                    </p>
+                    <p class="wow fadeInUp">
+                        I try to integrate it all until I cave <br>
+                        Retreating to the wine and cheese parade <br>
+                        Safety in the putrid and inane <br>
+                        Safety in the stench of the insane
+                    </p>
+                    <p class="wow fadeInUp">
+                        But a tiny green man in a walkin’ stick suit <br>
+                        Is parked in front, above the light on my stoop <br>
+                        He reminds me of that June bug in the fire light <br>
+                        What a tiny little powerhouse of shimmer might <br>
+                        Yeah, I bet she could tear a hole in this plastic night <br>
+                        Yeah, I bet she could tear a hole in this plastic night <br>
+                        Yeah, I bet we could tear a hole in this plastic night <br>
+                        I know we could tear a whole in this plastic night
+                    </p>
+                    <p class="wow fadeInUp">
+                        Oh, this world seems gone <br>
+                        Washed away inside this song <br>
+                        Where the river meets the sea <br>
+                        I can drift into what’s real <br>
+                        Tear open the night <br>
+                        We’re waiting here
+                    </p>
+                    <p class="wow fadeInUp">
+                        Deep in my heart there’s a spear <br>
+                        Part of me knows that it’s real <br>
+                        How do I pull this thing out? <br>
+                        How do I pierce through the doubt?
+                    </p>
+                    <p class="wow fadeInUp">
+                        This dark side of myself makes no sense <br>
+                        I’ve gotta stop pretending that it does <br>
+                        I think I’m right but do I even care? <br>
+                        I can’t even feel my own heart
+                    </p>
+                    <p class="wow fadeInUp">
+                        Oh, this world seems gone <br>
+                        Washed away inside this song <br>
+                        Where the river meets the sea <br>
+                        I can drift into what’s real
+                    </p>
+                    <p class="wow fadeInUp">
+                        Then a dragonfly whizzes right past my ear <br>
+                        He won’t let me forget that he’s here <br>
+                        He reminds me of that vision in the firelight <br>
+                        What a beautiful imagining of grace and might <br>
+                        There’s a world beyond this muddy, garish, silly sight <br>
+                        Yeah, I know we could tear a whole in this plastic night <br>
+                        Yeah, I know we could tear a whole in this plastic night<br>
+                        There’s a world beyond this muddy, garish, silly sight <br>
+                        Yeah, I know we could tear a whole in this plastic night <br>
+                        I know we could tear a hole in this plastic night <br>
+                        Yeah, I know we could tear a whole in this plastic night <br>
+                        I know we could tear a whole in this plastic night
+                    </p>
+                </div>
+                <div class="song__next-wrapper wow fadeInUp">
+                    <a class="song__next" href="#">Amaurot</a>
+                </div>
+            </section>
+
+            <section class="song">
+                <h2 class="song__header wow fadeInUp">Amaurot</h2>
+                <div class="song__text-block">
+                    <p class="wow fadeInUp">
+                        Test of time inside a rhyme <br>
+                        Of riddles and of lore <br>
+                        We stand behind the unlocked door <br>
+                        Just waiting for you, to turn it <br>
+                        You cried out for help, we showed <br>
+                        But your eyes were too full of tears to see us
+                    </p>
+                    <p class="wow fadeInUp">
+                        A place so dark no one could hear <br>
+                        But you would not be neglected <br>
+                        By the man in ironclad, <br>
+                        The witness stand protected <br>
+                        Inside the walls of time and space, <br>
+                        Oh, the riptide is rejected
+                    </p>
+                    <p class="wow fadeInUp">
+                        Will you drown or swim to shore and <br>
+                        Take your soul back, off the saddle? <br>
+                        Or will you let that wild horse <br>
+                        Run off, drag off, take off with your victory? <br>
+                        Shootin’ idle, sitting star <br>
+                        We wait for you to shine
+                    </p>
+                    <p class="wow fadeInUp">
+                        Child of the future, <br>
+                        You have a heart of gold <br>
+                        What you imagine now <br>
+                        Is what will matter most <br>
+                        Child of the future <br>
+                        Stop the nothingness <br>
+                        Look where beauty lands <br>
+                        To bring Amaurot back
+                    </p>
+                    <p class="wow fadeInUp">
+                        You are the one, you are the one who can save us <br>
+                        (Imagine the world that you really want) x2
+                    </p>
+                    <p class="wow fadeInUp">
+                        They hand out hope for sorrow <br>
+                        And paint the streets in gold
+                    </p>
+                    <p class="wow fadeInUp">
+                        The hills of red are full of dead <br>
+                        The heart within is green with sin <br>
+                        The upside down will swallow you, <br>
+                        If you choose to let it win <br>
+                        The nothing world will fill your mind <br>
+                        With visions we’ve rejected
+                    </p>
+                    <p class="wow fadeInUp">
+                        Will you fall or jilt the sight <br>
+                        Of gore and fame and folly? <br>
+                        In the smear campaign of life is grace, <br>
+                        Ooh, but will you ignore it? <br>
+                        The path within is full of burs, <br>
+                        We’ll pull them off at the altar
+                    </p>
+                    <p class="wow fadeInUp">
+                        A countess lion full of fight <br>
+                        From way beyond the grave <br>
+                        Sets the table now before you, <br>
+                        For the man inside the cave <br>
+                        Shootin’ idle, sitting star <br>
+                        We wait for you to shine
+                    </p>
+                    <p class="wow fadeInUp">
+                        Child of the future, <br>
+                        You have a heart of gold <br>
+                        What you imagine now <br>
+                        Is what will matter most <br>
+                        Child of the future <br>
+                        Stop the nothingness <br>
+                        Look where beauty lands <br>
+                        To bring Amaurot back
+                    </p>
+                    <p class="wow fadeInUp">
+                        You are the one, you are the one who can save us <br>
+                        Imagine the world that you really want <br>
+                        Child of the future <br>
+                        You are the one, you are the one who can save us <br>
+                        Imagine the world that you really want <br>
+                        Child of the future <br>
+                        You are the one, you are the one who can save us <br>
+                        Imagine the world that you really want
+                    </p>
+
+                </div>
+                <div class="song__next-wrapper wow fadeInUp">
+                    <a class="song__next" href="#">All I Am is Love</a>
+                </div>
+            </section>
+
+            <section class="song">
+                <h2 class="song__header wow fadeInUp">All I Am is Love</h2>
+                <div class="song__text-block">
+                    <p class="wow fadeInUp">
+                        So, who am I now? <br>
+                        When I’m not who I’ve been, <br>
+                        Who I will be? <br>
+                        I am not where I came from <br>
+                        And not where I’m going <br>
+                        Not who I made up just to please everyone <br>
+                        I am more than a body, <br>
+                        The son of the sun <br>
+                        (Who Am I?) <br>
+                        I’m more than a group and there’s no group, <br>
+                        That could hold all I am <br>
+                        I’m love that came from love to go back <br>
+                        This is all that I am, love <br>
+                        A wind in a valley of myrtle,<br>
+                        Breathing fragrance in space <br>
+                        To the creatures around <br>
+                        A stream of the ocean that gives life to all <br>
+                        That needs nothing to love, <br>
+                        Gives and takes not <br>
+                        Just love unto love
+                    </p>
+                    <p class="wow fadeInUp">
+                        A holy kiss of deepest love <br>
+                        Pressed to the mouth of one above <br>
+                        A breath of the creative force <br>
+                        Infusing life with form
+                    </p>
+                    <p class="wow fadeInUp">
+                        Love is all I am <br>
+                        From love to love <br>
+                        A breath of life in song <br>
+                        From love to love x3 <br>
+                        (Who Am I?)
+                    </p>
+                    <p class="wow fadeInUp">
+                        Drops of heaven in song <br>
+                        That return back <br>
+                        To when nothing need said <br>
+                        Love that came from love to go back <br>
+                        This is all that I am now
+                    </p>
+                    <p class="wow fadeInUp">
+                        Love is all I am, <br>
+                        From love to love <br>
+                        (This is all that I will be) <br>
+                        From love to love <br>
+                        (All that I have been even when I can’t see) <br>
+                        From love to love <br>
+                        A breath of life in song <br>
+                        (Even when I forgot love is all that I am) <br>
+                        From love to love <br>
+                        (A holy kiss of deepest love) <br>
+                        From love to love <br>
+                        Pressed to the mouth of one above <br>
+                        (Who am I?) <br>
+                        A breath of the creative force <br>
+                        Infusing life with form <br>
+                        (Who am I?) <br>
+                        Drops of heaven in song that return back, <br>
+                        To when nothing need said
+                    </p>
+                </div>
+                <div class="song__next-wrapper wow fadeInUp">
+                    <a class="song__next" href="#">To Watch You Grow Old</a>
+                </div>
+            </section>
+
+            <section class="song">
+                <h2 class="song__header wow fadeInUp">To Watch You Grow Old</h2>
+                <div class="song__text-block">
+                    <p class="wow fadeInUp">
+                        Pretty done with travelin’ the globe <br>
+                        Pretty done goin’ out to shows <br>
+                        Pretty done with workin’ on my bod’ <br>
+                        Pretty done with workin’ on my head
+                    </p>
+                    <p class="wow fadeInUp">
+                        For you I’d travel <br>
+                        Around the whole <br>
+                        world I’d do more yoga, <br>
+                        Give you somethin’ pretty to hold <br>
+                        I’d make your favorites <br>
+                        Fill them with passion <br>
+                        I’d go to shows to see you smile, <br>
+                        To watch you grow old
+                    </p>
+                    <p class="wow fadeInUp">
+                        I would stick around to see you laugh <br>
+                        I would stay on earth to catch your breath <br>
+                        There's not much that I still want to do <br>
+                        But for you, I'd do it all again
+                    </p>
+                    <p class="wow fadeInUp">
+                        For you I’d travel <br>
+                        Around the whole world <br>
+                        I’d do more yoga, <br>
+                        Give you somethin’ pretty to hold <br>
+                        I’d make your favorites <br>
+                        Fill them with passion <br>
+                        I’d go to shows to see you smile, <br>
+                        To watch you grow old
+                    </p>
+                </div>
+                <div class="song__next-wrapper wow fadeInUp">
+                    <a class="song__next" href="#">Violet and the Sun</a>
+                </div>
+            </section>
+
+            <section class="song">
+                <h2 class="song__header wow fadeInUp">Violet and the Sun</h2>
+                <div class="song__text-block">
+                    <p class="wow fadeInUp">
+                        I'd guide you through madness <br>
+                        Like a flame in the dark <br>
+                        Like a bloom on a cactus <br>
+                        Like the love of a child <br>
+                        I'd love you in starlight <br>
+                        Love you in daylight <br>
+                        Through mighty rainstorms <br>
+                        And ever blue skies
+                    </p>
+                    <p class="wow fadeInUp">
+                        We could lasso <br>
+                        All the dragons <br>
+                        With our love <br>
+                        And ride on the moon <br>
+                        To Violet and the Sun X2
+                    </p>
+                    <p class="wow fadeInUp">
+                        I see you there, <br>
+                        Trapped in clouds <br>
+                        Before nightfall <br>
+                        Pink, through the sky, <br>
+                        Romance caught <br>
+                        Heaven breaks through
+                    </p>
+                    <p class="wow fadeInUp">
+                        I, I wait here, for your love <br>
+                        Will you find me? <br>
+                        Here, through the storm <br>
+                        I shine true <br>
+                        I will find you
+                    </p>
+                    <p class="wow fadeInUp">
+                        I'll wait for forever <br>
+                        For stars to rejoin <br>
+                        For earth to meet heaven <br>
+                        For light to sound notes <br>
+                        I'll breathe in your each word <br>
+                        And listen to spaces<br>
+                        Keep time with your breath <br>
+                        And rest in your stillness
+                    </p>
+                    <p class="wow fadeInUp">
+                        We could lasso <br>
+                        All the dragons <br>
+                        With our love <br>
+                        And ride on the moon <br>
+                        To Violet and the Sun X2
+                    </p>
+                    <p class="wow fadeInUp">
+                        My love, won’t you come meet me here <br>
+                        My love, won’t you come willingly <br>
+                        My love, won’t you come meet me here <br>
+                        My love, won’t you come willingly <br>
+                        My love, won’t you come meet me here <br>
+                        My love, won’t you come willingly <br>
+                        To heaven’s gate <br>
+                        To heaven’s gate
+                    </p>
+                </div>
+                <div class="song__next-wrapper wow fadeInUp">
+                    <a class="song__next" href="#">Stardust</a>
+                </div>
+            </section>
+
+            <section class="song">
+                <h2 class="song__header wow fadeInUp">Stardust</h2>
+                <div class="song__text-block">
+                    <p class="wow fadeInUp">
+                        Dearest one, do you think you can tell, <br>
+                        True love from the well, <br>
+                        What’s real from your pride? <br>
+                        Can you tell when the tamer, that dark lust for comfort, <br>
+                        Whips you back to familiar, grips your soul with his game? <br>
+                        Do you get a strange chill when that old ghoul, he enters? <br>
+                        Stops your heart through suggestion <br>
+                        Guards your shame with his charm? <br>
+                        Did he get you to trade in your best gifts for sand? <br>
+                        Lure you into his web? <br>
+                        Fill your glove with his hand? <br>
+                        Laughing at what you could be <br>
+                        Lays your dreams down <br>
+                        Stabs the heart of your true love, <br>
+                        Then grins his way through her funeral
+                    </p>
+                    <p class="wow fadeInUp">
+                        If I could, love, then I would free you<br>
+                        Let you see your true potential <br>
+                        I’d spread you like stardust <br>
+                        Through skies of endless day
+                    </p>
+                    <p class="wow fadeInUp">
+                        Oh, my friend, you don’t fit through that door <br>
+                        Please don’t shrink for that hall <br>
+                        Please don’t drown in that well <br>
+                        Will you tear down those guards now? <br>
+                        And turn from pleasure that traps you? <br>
+                        Walk through fire that burns you? <br>
+                        Take off mask that feels safe? <br>
+                        Won’t you spill all your secrets <br>
+                        And lay your prize down <br>
+                        Trade your house for the heavens <br>
+                        Swap your cave for cosmos? <br>
+                        Will you be breath of heaven <br>
+                        In every cell, every atom? <br>
+                        Can you become the heartbeat of all the life there is?
+                    </p>
+                    <p class="wow fadeInUp">
+                        If I could, love, then I would free you <br>
+                        Let you see your true potential <br>
+                        I’d spread you like stardust <br>
+                        Through skies of endless day
+                    </p>
+                </div>
+                <div class="song__next-wrapper wow fadeInUp">
+                    <a class="song__next" href="#">Constant</a>
+                </div>
+            </section>
+
+            <section class="song">
+                <h2 class="song__header wow fadeInUp">Constant</h2>
+                <div class="song__text-block">
+                    <p class="wow fadeInUp">
+                        I don’t know what <br>
+                        You feel for me <br>
+                        But I know you <br>
+                        Make me better
+                    </p>
+                    <p class="wow fadeInUp">
+                        I don’t know what <br>
+                        You need from love <br>
+                        But I’ll give you <br>
+                        All the best I have
+                    </p>
+                    <p class="wow fadeInUp">
+                        Oh, constant <br>
+                        How you polish me <br>
+                        Helps me stretch higher <br>
+                        I burn brighter
+                    </p>
+                    <p class="wow fadeInUp">
+                        Oh, my constant <br>
+                        You command the best of me <br>
+                        Oh, my constant <br>
+                        Help me find my destiny
+                    </p>
+                    <p class="wow fadeInUp">
+                        Let’s try to fly <br>
+                        Pull it through <br>
+                        As one we can <br>
+                        Set us free x2
+                    </p>
+                    <p class="wow fadeInUp">
+                        If we make it <br>
+                        With each other <br>
+                        We could touch the <br>
+                        Hem of heaven
+                    </p>
+                    <p class="wow fadeInUp">
+                        When I’m lost I <br>
+                        Find my way by <br>
+                        Talkin’ to you <br>
+                        You unlock all my love
+                    </p>
+                    <p class="wow fadeInUp">
+                        Constant <br>
+                        How you polish me <br>
+                        Helps me me stretch higher <br>
+                        I burn brighter
+                    </p>
+                    <p class="wow fadeInUp">
+                        If I could hold the world as you <br>
+                        I could part the veil, and walk through <br>
+                        Touch the other side ‘til we got lighter <br>
+                        We go higher
+                    </p>
+                    <p class="wow fadeInUp">
+                        Oh, my constant <br>
+                        You command the best of me <br>
+                        Oh, my constant <br>
+                        Help me find my destiny
+                    </p>
+                </div>
+                <div class="song__next-wrapper wow fadeInUp">
+                    <a class="song__next" href="#">George and Martha</a>
+                </div>
+            </section>
+
+            <section class="song">
+                <h2 class="song__header wow fadeInUp">George and Martha</h2>
+                <div class="song__text-block">
+                    <p class="wow fadeInUp">
+                        When they met, the stars spun into day <br>
+                        Spilling secrets 'til the sun came up <br>
+                        It seemed every pain and shame could be erased now, <br>
+                        ‘Cause George loved her despite all he could see <br>
+                        Martha brushed off flaws he wore on his ripped suit sleeve <br>
+                        The laughs they shared made right their tragedy
+                    </p>
+                    <p class="wow fadeInUp">
+                        But George and Martha loved each other <br>
+                        Underneath it all <br>
+                        Though they wasted their time here fightin' <br>
+                        And they shed all those years dry cryin' <br>
+                        If you stand by their grave, you can hear their love <br>
+                        Oh, their love <br>
+                        Their love <br>
+                        Sad, sad, sad
+                    </p>
+                    <p class="wow fadeInUp">
+                        In her kiss he'd taste all his missed meals <br>
+                        And in his eyes she saw black skies turn blue <br>
+                        But then her lips turned into something colder <br>
+                        And his eyes were soaked in storms of prison hues <br>
+                        The warmth she held was locked beneath the surface <br>
+                        All his laughs contained the stone he never threw
+                    </p>
+                    <p class="wow fadeInUp">
+                        Guilty over love they lost <br>
+                        Sick from memories swallowed down <br>
+                        They vowed to drop their words and fight in stares <br>
+                        Now the life best friends had built <br>
+                        Was a bullring without any fans <br>
+                        Their hearts became the taunts of red that <br>
+                        Their horns would spear without a thought
+                    </p>
+                    <p class="wow fadeInUp">
+                        But George and Martha loved each other <br>
+                        Underneath it all <br>
+                        Though they wasted their time here fightin' <br>
+                        And they shed all those years dry cryin' <br>
+                        If you stand by their grave, you can hear their love <br>
+                        Oh, their love <br>
+                        Their love <br>
+                        Sad, sad, sad
+                    </p>
+
+                </div>
+                <div class="song__next-wrapper wow fadeInUp">
+                    <a class="song__next" href="#">The Ruby Song</a>
+                </div>
+            </section>
+
+            <section class="song">
+                <h2 class="song__header wow fadeInUp">The Ruby Song</h2>
+                <div class="song__text-block">
+                    <p class="wow fadeInUp">
+                        Some days I wonder what of me they'll remember <br>
+                        Will this earth be better off because of me? <br>
+                        I want to do more than act out human drama <br>
+                        I want to leave a path from my heart to heaven
+                    </p>
+                    <p class="wow fadeInUp">
+                        Can I be that brave, can I be that bold, <br>
+                        Leaving selfish things behind? <br>
+                        When the perfect comes, and the partial goes <br>
+                        Will I serve them like a man?
+                    </p>
+                    <p class="wow fadeInUp">
+                        But I am tryin’ in my own way <br>
+                        To find a path to love and faith <br>
+                        (A path to love and faith) <br>
+                        I’m tryin’ <br>
+                        I will <br>
+                        Learn to sing along <br>
+                        To the Ruby Song
+                    </p>
+                    <p class="wow fadeInUp">
+                        To the Ruby Song
+                    </p>
+                    <p class="wow fadeInUp">
+                        I gave up when my idols all had to failed me <br>
+                        They were as full of flaws and falls as me <br>
+                        Now I can either give up, or find my own way <br>
+                        Carry the torch of those who came before
+                    </p>
+                    <p class="wow fadeInUp">
+                        Can I be that brave, can I be that bold, <br>
+                        Fight the battles others lost? <br>
+                        I refuse to think this is all I am, <br>
+                        Just another human mess
+                    </p>
+                    <p class="wow fadeInUp">
+                        But I am tryin’ in my own way <br>
+                        To find a path to love and faith<br>
+                        (A path to love and faith)<br>
+                        I’m tryin’ <br>
+                        I will <br>
+                        Learn to sing along <br>
+                        To the Ruby Song <br>
+                        To the Ruby Song
+                    </p>
+
+                </div>
+                <div class="song__next-wrapper wow fadeInUp">
+                    <a class="song__next" href="#">(Tear a Hole in) This Plastic Night</a>
+                </div>
+            </section>
         </div>
-      </section>
-      <div class="decor-wrapper--nocolor">
-        <section class="collaborators" id="collaborators">
-          <h2 class="collaborators__header wow fadeInUp">Collaborators</h2>
-          <ul class="collaborators__list">
-            <li class="collaborators__item  wow fadeInUp">
-              <p class="collaborators__name">Aaron Day</p>
-              <p class="collaborators__role">vocals, clarinet, percussion</p>
-            </li>
-            <li class="collaborators__item  wow fadeInUp">
-              <p class="collaborators__name">Christine Bucher</p>
-              <p class="collaborators__role">cello</p>
-            </li>
-            <li class="collaborators__item wow fadeInUp">
-              <p class="collaborators__name">Ben Leinbach</p>
-              <p class="collaborators__role">mixing, mastering, bass</p>
-            </li>
-            <li class="collaborators__item wow fadeInUp">
-              <p class="collaborators__name">Birkan Yavuz</p>
-              <p class="collaborators__role">violin</p>
-            </li>
-            <li class="collaborators__item wow fadeInUp">
-              <p class="collaborators__name">Jon Margulies</p>
-              <p class="collaborators__role">guitar, bass</p>
-            </li>
-            <li class="collaborators__item wow fadeInUp">
-              <p class="collaborators__name">Kashaeda Sutton</p>
-              <p class="collaborators__role">violin</p>
-            </li>
-            <li class="collaborators__item wow fadeInUp">
-              <p class="collaborators__name collaborators__name--width">Elena Gonzalez-Putney-Wamble</p>
-              <p class="collaborators__role">violin</p>
-            </li>
-          </ul>
-        </section>
-
-      </div>
-
-      <section class="contacts" id="contacts">
-        <h2 class="contacts__header">Stay in touch</h2>
-        <ul class="contacts__list  wow fadeInUp">
-          <li class="contacts__item  wow fadeInUp">
-            <p class="contacts__value"><a href="#">Violet and the Sun</a></p>
-            <p class="contacts__type">YouTube</p>
-          </li>
-          <li class="contacts__item  wow fadeInUp">
-            <p class="contacts__value"><a href="#">Our Bandcamp</a></p>
-            <p class="contacts__type">Zazzle shop</p>
-          </li>
-          <li class="contacts__item wow fadeInUp">
-            <p class="contacts__value"><a href="mailto:contact@violetandthesun.com">contact@violetandthesun.com</a></p>
-            <p class="contacts__type">e-mail</p>
-          </li>
-          <li class="contacts__item wow fadeInUp">
-            <p class="contacts__value"><a href="tel:3478709402">347-870-9402</a></p>
-            <p class="contacts__type">mobile</p>
-          </li>
-        </ul>
-      </section>
-      <section class="subscribe">
-        <h2 class="subscribe__header  wow fadeInUp">Sign up for our News</h2>
-        <form class="subscribe__form" action="" method="post">
-          <ul class="subscribe__form-list">
-            <li class="subscribe__form-item  wow fadeInUp">
-              <input class="subscribe__form-input subscribe__form-input--email" type="email" name="email" id="email" placeholder="enter your email*" required>
-              <label class="subscribe__form-label" for="email">email address</label>
-            </li>
-            <li class="subscribe__form-item  wow fadeInUp">
-              <input class="subscribe__form-input subscribe__form-input--name" type="text" name="name" id="name" placeholder="Alan Smithee">
-              <label class="subscribe__form-label" for="name">name</label>
-            </li>
-            <li class="subscribe__form-item  wow fadeInUp">
-              <input class="subscribe__form-input subscribe__form-input--birthday" type="date" name="birthday" id="birthday">
-              <label class="subscribe__form-label" for="birthday">birthday</label>
-            </li>
-            <li class="subscribe__form-item  wow fadeInUp">
-              <input class="subscribe__form-input subscribe__form-input--country" type="text" name="country" id="country" placeholder="Austria">
-              <label class="subscribe__form-label" for="country">country</label>
-            </li>
-            <li class="subscribe__form-item  wow fadeInUp">
-              <input class="subscribe__form-input subscribe__form-input--zip" type="text" name="zip-code" id="zip-code" placeholder="31-589">
-              <label class="subscribe__form-label" for="zip-code">zip-code</label>
-            </li>
-            <li class="subscribe__form-item  wow fadeInUp">
-              <input class="subscribe__form-input subscribe__form-input--phone" type="tel" name="phone" id="phone" placeholder="+48733160082">
-              <label class="subscribe__form-label" for="phone">phone number</label>
-            </li>
-          </ul>
-
-          <b class="subscribe__alert wow fadeInUp">By providing a few details about yourself, we can learn who and where our audience is for future tours, etc.
-            Don't worry! We promise not to share this information with anyone.</b>
-          <button class="subscribe__submit  wow fadeInUp" type="submit">Submit</button>
-        </form>
-      </section>
-
-        <section class="song">
-            <h2 class="song__header wow fadeInUp">(Tear a Hole in) This Plastic Night</h2>
-            <div class="song__text-block">
-                <p class="wow fadeInUp">
-                    Deep in my bones there’s a fear <br>
-                    Part of me wants to make it real <br>
-                    How do you shut this thing off? <br>
-                    How do you find where it starts?
-                </p>
-                <p class="wow fadeInUp">
-                    This world I know is tearing at the seams <br>
-                    The fabric split, the hologram blew steam, <br>
-                    Cartoon shrapnel flew across the screen, <br>
-                    Chroma bled like technicolor dreams
-                </p>
-                <p class="wow fadeInUp">
-                    I try to integrate it all until I cave <br>
-                    Retreating to the wine and cheese parade <br>
-                    Safety in the putrid and inane <br>
-                    Safety in the stench of the insane
-                </p>
-                <p class="wow fadeInUp">
-                    But a tiny green man in a walkin’ stick suit <br>
-                    Is parked in front, above the light on my stoop <br>
-                    He reminds me of that June bug in the fire light <br>
-                    What a tiny little powerhouse of shimmer might <br>
-                    Yeah, I bet she could tear a hole in this plastic night <br>
-                    Yeah, I bet she could tear a hole in this plastic night <br>
-                    Yeah, I bet we could tear a hole in this plastic night <br>
-                    I know we could tear a whole in this plastic night
-                </p>
-                <p class="wow fadeInUp">
-                    Oh, this world seems gone <br>
-                    Washed away inside this song <br>
-                    Where the river meets the sea <br>
-                    I can drift into what’s real <br>
-                    Tear open the night <br>
-                    We’re waiting here
-                </p>
-                <p class="wow fadeInUp">
-                    Deep in my heart there’s a spear <br>
-                    Part of me knows that it’s real <br>
-                    How do I pull this thing out? <br>
-                    How do I pierce through the doubt?
-                </p>
-                <p class="wow fadeInUp">
-                    This dark side of myself makes no sense <br>
-                    I’ve gotta stop pretending that it does <br>
-                    I think I’m right but do I even care? <br>
-                    I can’t even feel my own heart
-                </p>
-                <p class="wow fadeInUp">
-                    Oh, this world seems gone <br>
-                    Washed away inside this song <br>
-                    Where the river meets the sea <br>
-                    I can drift into what’s real
-                </p>
-                <p class="wow fadeInUp">
-                    Then a dragonfly whizzes right past my ear <br>
-                    He won’t let me forget that he’s here <br>
-                    He reminds me of that vision in the firelight <br>
-                    What a beautiful imagining of grace and might <br>
-                    There’s a world beyond this muddy, garish, silly sight <br>
-                    Yeah, I know we could tear a whole in this plastic night <br>
-                    Yeah, I know we could tear a whole in this plastic night<br>
-                    There’s a world beyond this muddy, garish, silly sight <br>
-                    Yeah, I know we could tear a whole in this plastic night <br>
-                    I know we could tear a hole in this plastic night <br>
-                    Yeah, I know we could tear a whole in this plastic night <br>
-                    I know we could tear a whole in this plastic night
-                </p>
-            </div>
-            <div class="song__next-wrapper wow fadeInUp">
-                <a class="song__next" href="#">Amaurot</a>
-            </div>
-        </section>
-
-        <section class="song">
-            <h2 class="song__header wow fadeInUp">Amaurot</h2>
-            <div class="song__text-block">
-                <p class="wow fadeInUp">
-                    Test of time inside a rhyme  <br>
-                    Of riddles and of lore <br>
-                    We stand behind the unlocked door  <br>
-                    Just waiting for you, to turn it  <br>
-                    You cried out for help, we showed <br>
-                    But your eyes were too full of tears to see us
-                </p>
-                <p class="wow fadeInUp">
-                    A place so dark no one could hear <br>
-                    But you would not be neglected   <br>
-                    By the man in ironclad,  <br>
-                    The witness stand protected  <br>
-                    Inside the walls of time and space,  <br>
-                    Oh, the riptide is rejected
-                </p>
-                <p class="wow fadeInUp">
-                    Will you drown or swim to shore and <br>
-                    Take your soul back, off the saddle? <br>
-                    Or will you let that wild horse <br>
-                    Run off, drag off, take off with your victory? <br>
-                    Shootin’ idle, sitting star <br>
-                    We wait for you to shine
-                </p>
-                <p class="wow fadeInUp">
-                    Child of the future, <br>
-                    You have a heart of gold  <br>
-                    What you imagine now  <br>
-                    Is what will matter most <br>
-                    Child of the future  <br>
-                    Stop the nothingness <br>
-                    Look where beauty lands <br>
-                    To bring Amaurot back
-                </p>
-                <p class="wow fadeInUp">
-                    You are the one, you are the one who can save us <br>
-                    (Imagine the world that you really want) x2
-                </p>
-                <p class="wow fadeInUp">
-                    They hand out hope for sorrow <br>
-                    And paint the streets in gold
-                </p>
-                <p class="wow fadeInUp">
-                    The hills of red are full of dead  <br>
-                    The heart within is green with sin  <br>
-                    The upside down will swallow you, <br>
-                    If you choose to let it win  <br>
-                    The nothing world will fill your mind  <br>
-                    With visions we’ve rejected
-                </p>
-                <p class="wow fadeInUp">
-                    Will you fall or jilt the sight  <br>
-                    Of gore and fame and folly?  <br>
-                    In the smear campaign of life is grace,  <br>
-                    Ooh, but will you ignore it? <br>
-                    The path within is full of burs,  <br>
-                    We’ll pull them off at the altar
-                </p>
-                <p class="wow fadeInUp">
-                    A countess lion full of fight <br>
-                    From way beyond the grave <br>
-                    Sets the table now before you, <br>
-                    For the man inside the cave  <br>
-                    Shootin’ idle, sitting star <br>
-                    We wait for you to shine
-                </p>
-                <p class="wow fadeInUp">
-                    Child of the future, <br>
-                    You have a heart of gold  <br>
-                    What you imagine now  <br>
-                    Is what will matter most <br>
-                    Child of the future  <br>
-                    Stop the nothingness <br>
-                    Look where beauty lands <br>
-                    To bring Amaurot back
-                </p>
-                <p class="wow fadeInUp">
-                    You are the one, you are the one who can save us <br>
-                    Imagine the world that you really want <br>
-                    Child of the future <br>
-                    You are the one, you are the one who can save us <br>
-                    Imagine the world that you really want <br>
-                    Child of the future <br>
-                    You are the one, you are the one who can save us <br>
-                    Imagine the world that you really want
-                </p>
-
-            </div>
-            <div class="song__next-wrapper wow fadeInUp">
-                <a class="song__next" href="#">All I Am is Love</a>
-            </div>
-        </section>
-
-        <section class="song">
-            <h2 class="song__header wow fadeInUp">All I Am is Love</h2>
-            <div class="song__text-block">
-                <p class="wow fadeInUp">
-                    So, who am I now?  <br>
-                    When I’m not who I’ve been, <br>
-                    Who I will be? <br>
-                    I am not where I came from <br>
-                    And not where I’m going    <br>
-                    Not who I made up just to please everyone  <br>
-                    I am more than a body,  <br>
-                    The son of the sun  <br>
-                    (Who Am I?) <br>
-                    I’m more than a group and there’s no group,  <br>
-                    That could hold all I am  <br>
-                    I’m love that came from love to go back  <br>
-                    This is all that I am, love  <br>
-                    A wind in a valley of myrtle,<br>
-                    Breathing fragrance in space  <br>
-                    To the creatures around <br>
-                    A stream of the ocean that gives life to all  <br>
-                    That needs nothing to love, <br>
-                    Gives and takes not <br>
-                    Just love unto love
-                </p>
-                <p class="wow fadeInUp">
-                    A holy kiss of deepest love <br>
-                    Pressed to the mouth of one above <br>
-                    A breath of the creative force <br>
-                    Infusing life with form
-                </p>
-                <p class="wow fadeInUp">
-                    Love is all I am <br>
-                    From love to love <br>
-                    A breath of life in song <br>
-                    From love to love x3 <br>
-                    (Who Am I?)
-                </p>
-                <p class="wow fadeInUp">
-                    Drops of heaven in song  <br>
-                    That return back  <br>
-                    To when nothing need said  <br>
-                    Love that came from love to go back  <br>
-                    This is all that I am now
-                </p>
-                <p class="wow fadeInUp">
-                    Love is all I am, <br>
-                    From love to love <br>
-                    (This is all that I will be) <br>
-                    From love to love <br>
-                    (All that I have been even when I can’t see) <br>
-                    From love to love <br>
-                    A breath of life in song <br>
-                    (Even when I forgot love is all that I am) <br>
-                    From love to love  <br>
-                    (A holy kiss of deepest love) <br>
-                    From love to love <br>
-                    Pressed to the mouth of one above <br>
-                    (Who am I?) <br>
-                    A breath of the creative force <br>
-                    Infusing life with form <br>
-                    (Who am I?) <br>
-                    Drops of heaven in song that return back, <br>
-                    To when nothing need said
-                </p>
-            </div>
-            <div class="song__next-wrapper wow fadeInUp">
-                <a class="song__next" href="#">To Watch You Grow Old</a>
-            </div>
-        </section>
-
-        <section class="song">
-            <h2 class="song__header wow fadeInUp">To Watch You Grow Old</h2>
-            <div class="song__text-block">
-                <p class="wow fadeInUp">
-                    Pretty done with travelin’ the globe <br>
-                    Pretty done goin’ out to shows <br>
-                    Pretty done with workin’ on my bod’ <br>
-                    Pretty done with workin’ on my head
-                </p>
-                <p class="wow fadeInUp">
-                    For you I’d travel <br>
-                    Around the whole <br>
-                    world I’d do more yoga, <br>
-                    Give you somethin’ pretty to hold  <br>
-                    I’d make your favorites  <br>
-                    Fill them with passion <br>
-                    I’d go to shows to see you smile, <br>
-                    To watch you grow old
-                </p>
-                <p class="wow fadeInUp">
-                    I would stick around to see you laugh  <br>
-                    I would stay on earth to catch your breath  <br>
-                    There's not much that I still want to do <br>
-                    But for you, I'd do it all again
-                </p>
-                <p class="wow fadeInUp">
-                    For you I’d travel <br>
-                    Around the whole world <br>
-                    I’d do more yoga, <br>
-                    Give you somethin’ pretty to hold  <br>
-                    I’d make your favorites <br>
-                    Fill them with passion <br>
-                    I’d go to shows to see you smile, <br>
-                    To watch you grow old
-                </p>
-            </div>
-            <div class="song__next-wrapper wow fadeInUp">
-                <a class="song__next" href="#">Violet and the Sun</a>
-            </div>
-        </section>
-
-        <section class="song">
-            <h2 class="song__header wow fadeInUp">Violet and the Sun</h2>
-            <div class="song__text-block">
-                <p class="wow fadeInUp">
-                    I'd guide you through madness <br>
-                    Like a flame in the dark <br>
-                    Like a bloom on a cactus <br>
-                    Like the love of a child <br>
-                    I'd love you in starlight <br>
-                    Love you in daylight <br>
-                    Through mighty rainstorms <br>
-                    And ever blue skies
-                </p>
-                <p class="wow fadeInUp">
-                    We could lasso <br>
-                    All the dragons <br>
-                    With our love <br>
-                    And ride on the moon <br>
-                    To Violet and the Sun X2
-                </p>
-                <p class="wow fadeInUp">
-                    I see you there, <br>
-                    Trapped in clouds <br>
-                    Before nightfall  <br>
-                    Pink, through the sky, <br>
-                    Romance caught <br>
-                    Heaven breaks through
-                </p>
-                <p class="wow fadeInUp">
-                    I, I wait here, for your love <br>
-                    Will you find me? <br>
-                    Here, through the storm <br>
-                    I shine true <br>
-                    I will find you
-                </p>
-                <p class="wow fadeInUp">
-                    I'll wait for forever  <br>
-                    For stars to rejoin  <br>
-                    For earth to meet heaven <br>
-                    For light to sound notes <br>
-                    I'll breathe in your each word <br>
-                    And listen to spaces<br>
-                    Keep time with your breath <br>
-                    And rest in your stillness
-                </p>
-                <p class="wow fadeInUp">
-                    We could lasso <br>
-                    All the dragons <br>
-                    With our love <br>
-                    And ride on the moon <br>
-                    To Violet and the Sun X2
-                </p>
-                <p class="wow fadeInUp">
-                    My love, won’t you come meet me here <br>
-                    My love, won’t you come willingly <br>
-                    My love, won’t you come meet me here <br>
-                    My love, won’t you come willingly <br>
-                    My love, won’t you come meet me here <br>
-                    My love, won’t you come willingly <br>
-                    To heaven’s gate <br>
-                    To heaven’s gate
-                </p>
-            </div>
-            <div class="song__next-wrapper wow fadeInUp">
-                <a class="song__next" href="#">Stardust</a>
-            </div>
-        </section>
-
-        <section class="song">
-            <h2 class="song__header wow fadeInUp">Stardust</h2>
-            <div class="song__text-block">
-                <p class="wow fadeInUp">
-                    Dearest one, do you think you can tell, <br>
-                    True love from the well, <br>
-                    What’s real from your pride? <br>
-                    Can you tell when the tamer, that dark lust for comfort, <br>
-                    Whips you back to familiar, grips your soul with his game? <br>
-                    Do you get a strange chill when that old ghoul, he enters? <br>
-                    Stops your heart through suggestion <br>
-                    Guards your shame with his charm? <br>
-                    Did he get you to trade in your best gifts for sand? <br>
-                    Lure you into his web? <br>
-                    Fill your glove with his hand? <br>
-                    Laughing at what you could be <br>
-                    Lays your dreams down <br>
-                    Stabs the heart of your true love, <br>
-                    Then grins his way through her funeral
-                </p>
-                <p class="wow fadeInUp">
-                    If I could, love, then I would free you<br>
-                    Let you see your true potential <br>
-                    I’d spread you like stardust <br>
-                    Through skies of endless day
-                </p>
-                <p class="wow fadeInUp">
-                    Oh, my friend, you don’t fit through that door <br>
-                    Please don’t shrink for that hall <br>
-                    Please don’t drown in that well <br>
-                    Will you tear down those guards now? <br>
-                    And turn from pleasure that traps you? <br>
-                    Walk through fire that burns you? <br>
-                    Take off mask that feels safe? <br>
-                    Won’t you spill all your secrets <br>
-                    And lay your prize down <br>
-                    Trade your house for the heavens <br>
-                    Swap your cave for cosmos? <br>
-                    Will you be breath of heaven <br>
-                    In every cell, every atom? <br>
-                    Can you become the heartbeat of all the life there is?
-                </p>
-                <p class="wow fadeInUp">
-                    If I could, love, then I would free you <br>
-                    Let you see your true potential <br>
-                    I’d spread you like stardust <br>
-                    Through skies of endless day
-                </p>
-            </div>
-            <div class="song__next-wrapper wow fadeInUp">
-                <a class="song__next" href="#">Constant</a>
-            </div>
-        </section>
-
-        <section class="song">
-            <h2 class="song__header wow fadeInUp">Constant</h2>
-            <div class="song__text-block">
-                <p class="wow fadeInUp">
-                    I don’t know what <br>
-                    You feel for me <br>
-                    But I know you <br>
-                    Make me better
-                </p>
-                <p class="wow fadeInUp">
-                    I don’t know what <br>
-                    You need from love <br>
-                    But I’ll give you <br>
-                    All the best I have
-                </p>
-                <p class="wow fadeInUp">
-                    Oh, constant <br>
-                    How you polish me <br>
-                    Helps me stretch higher <br>
-                    I burn brighter
-                </p>
-                <p class="wow fadeInUp">
-                    Oh, my constant <br>
-                    You command the best of me <br>
-                    Oh, my constant <br>
-                    Help me find my destiny
-                </p>
-                <p class="wow fadeInUp">
-                    Let’s try to fly <br>
-                    Pull it through <br>
-                    As one we can <br>
-                    Set us free x2
-                </p>
-                <p class="wow fadeInUp">
-                    If we make it <br>
-                    With each other <br>
-                    We could touch the <br>
-                    Hem of heaven
-                </p>
-                <p class="wow fadeInUp">
-                    When I’m lost I <br>
-                    Find my way by <br>
-                    Talkin’ to you <br>
-                    You unlock all my love
-                </p>
-                <p class="wow fadeInUp">
-                    Constant <br>
-                    How you polish me <br>
-                    Helps me me stretch higher <br>
-                    I burn brighter
-                </p>
-                <p class="wow fadeInUp">
-                    If I could hold the world as you <br>
-                    I could part the veil, and walk through <br>
-                    Touch the other side ‘til we got lighter <br>
-                    We go higher
-                </p>
-                <p class="wow fadeInUp">
-                    Oh, my constant <br>
-                    You command the best of me <br>
-                    Oh, my constant <br>
-                    Help me find my destiny
-                </p>
-            </div>
-            <div class="song__next-wrapper wow fadeInUp">
-                <a class="song__next" href="#">George and Martha</a>
-            </div>
-        </section>
-
-        <section class="song">
-            <h2 class="song__header wow fadeInUp">George and Martha</h2>
-            <div class="song__text-block">
-                <p class="wow fadeInUp">
-                    When they met, the stars spun into day <br>
-                    Spilling secrets 'til the sun came up <br>
-                    It seemed every pain and shame could be erased now, <br>
-                    ‘Cause George loved her despite all he could see <br>
-                    Martha brushed off flaws he wore on his ripped suit sleeve <br>
-                    The laughs they shared made right their tragedy
-                </p>
-                <p class="wow fadeInUp">
-                    But George and Martha loved each other <br>
-                    Underneath it all <br>
-                    Though they wasted their time here fightin' <br>
-                    And they shed all those years dry cryin' <br>
-                    If you stand by their grave, you can hear their love <br>
-                    Oh, their love <br>
-                    Their love <br>
-                    Sad, sad, sad
-                </p>
-                <p class="wow fadeInUp">
-                    In her kiss he'd taste all his missed meals <br>
-                    And in his eyes she saw black skies turn blue <br>
-                    But then her lips turned into something colder <br>
-                    And his eyes were soaked in storms of prison hues <br>
-                    The warmth she held was locked beneath the surface <br>
-                    All his laughs contained the stone he never threw
-                </p>
-                <p class="wow fadeInUp">
-                    Guilty over love they lost <br>
-                    Sick from memories swallowed down <br>
-                    They vowed to drop their words and fight in stares <br>
-                    Now the life best friends had built <br>
-                    Was a bullring without any fans <br>
-                    Their hearts became the taunts of red that <br>
-                    Their horns would spear without a thought
-                </p>
-                <p class="wow fadeInUp">
-                    But George and Martha loved each other <br>
-                    Underneath it all <br>
-                    Though they wasted their time here fightin' <br>
-                    And they shed all those years dry cryin' <br>
-                    If you stand by their grave, you can hear their love <br>
-                    Oh, their love <br>
-                    Their love <br>
-                    Sad, sad, sad
-                </p>
-
-            </div>
-            <div class="song__next-wrapper wow fadeInUp">
-                <a class="song__next" href="#">The Ruby Song</a>
-            </div>
-        </section>
-
-        <section class="song">
-            <h2 class="song__header wow fadeInUp">The Ruby Song</h2>
-            <div class="song__text-block">
-                <p class="wow fadeInUp">
-                    Some days I wonder what of me they'll remember <br>
-                    Will this earth be better off because of me?  <br>
-                    I want to do more than act out human drama <br>
-                    I want to leave a path from my heart to heaven
-                </p>
-                <p class="wow fadeInUp">
-                    Can I be that brave, can I be that bold, <br>
-                    Leaving selfish things behind? <br>
-                    When the perfect comes, and the partial goes <br>
-                    Will I serve them like a man?
-                </p>
-                <p class="wow fadeInUp">
-                    But I am tryin’ in my own way <br>
-                    To find a path to love and faith  <br>
-                    (A path to love and faith) <br>
-                    I’m tryin’ <br>
-                    I will <br>
-                    Learn to sing along  <br>
-                    To the Ruby Song
-                </p>
-                <p class="wow fadeInUp">
-                    To the Ruby Song
-                </p>
-                <p class="wow fadeInUp">
-                    I gave up when my idols all had to failed me <br>
-                    They were as full of flaws and falls as me <br>
-                    Now I can either give up, or find my own way <br>
-                    Carry the torch of those who came before
-                </p>
-                <p class="wow fadeInUp">
-                    Can I be that brave, can I be that bold, <br>
-                    Fight the battles others lost? <br>
-                    I refuse to think this is all I am, <br>
-                    Just another human mess
-                </p>
-                <p class="wow fadeInUp">
-                    But I am tryin’ in my own way <br>
-                    To find a path to love and faith<br>
-                    (A path to love and faith)<br>
-                    I’m tryin’ <br>
-                    I will <br>
-                    Learn to sing along  <br>
-                    To the Ruby Song <br>
-                    To the Ruby Song
-                </p>
-
-            </div>
-            <div class="song__next-wrapper wow fadeInUp">
-                <a class="song__next" href="#">(Tear a Hole in) This Plastic Night</a>
-            </div>
-        </section>
-    </div>
-    <iframe src="./music/silence.mp3" allow="autoplay" id="silence" style="display:none"></iframe>
-    <audio id="silence2" autoplay controls><source src="./music/silence.mp3" type="audio/mp3"></audio>
+        <iframe src="./music/silence.mp3" allow="autoplay" id="silence" style="display:none"></iframe>
+        <audio id="silence2" autoplay controls>
+            <source src="./music/silence.mp3" type="audio/mp3"></audio>
     </main>
-  <script src="js/vendor.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/pixi.min.js"></script>
-  <script>
-    let zoomAmount, isLoaded, imageScale, dispSpeed = 1;
-    let isEdge = false;
-    window.CanvasSlideshow = function(t) {
-        var e = this;
-        (t = t || {}).texts = t.hasOwnProperty("texts") ? t.texts : [], t.autoPlay = !t.hasOwnProperty("autoPlay") || t.autoPlay, t.autoPlaySpeed = t.hasOwnProperty("autoPlaySpeed") ? t.autoPlaySpeed : [10, 3], t.fullScreen = !t.hasOwnProperty(
-            "fullScreen") || t.fullScreen, t.displaceScale = t.hasOwnProperty("displaceScale") ? t.displaceScale : [200, 70], t.displacementImage = t.hasOwnProperty("displacementImage") ? t.displacementImage : "", t.navElement = t.hasOwnProperty(
-            "navElement") ? t.navElement : document.querySelectorAll(".scene-nav"), t.displaceAutoFit = !!t.hasOwnProperty("displaceAutoFit") && t.displaceAutoFit, t.wacky = !!t.hasOwnProperty("wacky") && t.wacky, t.interactive = !!t.hasOwnProperty(
-            "interactive") && t.interactive, t.interactionEvent = t.hasOwnProperty("interactionEvent") ? t.interactionEvent : "", t.displaceScaleTo = !1 === t.autoPlay ? [0, 0] : [20, 20], t.textColor = t.hasOwnProperty("textColor") ? t.textColor :
-          "#fff", t.displacementCenter = !!t.hasOwnProperty("displacementCenter") && t.displacementCenter, t.dispatchPointerOver = !!t.hasOwnProperty("dispatchPointerOver") && t.dispatchPointerOver;
-        var r = new PIXI.autoDetectRenderer(innerWidth, innerHeight, {
-            transparent: !0,
-            backgroundColor: 14137509
-          }),
-          i = new PIXI.Container,
-          n = new PIXI.Sprite.fromImage('img/clouds.jpg'),
-          o = new PIXI.filters.DisplacementFilter(n);
-        this.initPixi = function() {
-          document.body.appendChild(r.view), r.view.style.objectFit = "cover", r.view.style.width = "100%", r.view.style.height = "100%", r.view.style.top = "0", r.view.style.left = "0", n.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT, i
-            .filters = [o], n.scale.x = 2, n.scale.y = 2, n.rotation = 250, o.scale.set(t.displaceScale[0], t.displaceScale[1]), i.addChild(n)
-        };
-        var s = new PIXI.Texture.fromImage('img/bg-ipad.jpg'),
-          a = new PIXI.Sprite(s);
-        a.anchor.set(0.5), a.width = 840, a.height = 670, a.position.x = innerWidth / 2, a.y = innerHeight / 2, i.addChild(a);
-        var u = new PIXI.ticker.Ticker;
-        console.log(a.scale.x);
-        console.log(a.scale.y);
-        u.autoStart = !0, u.add(function(e) {
-          const s = o.scale.x;
-          n.x += t.autoPlaySpeed[0] * e, n.y += t.autoPlaySpeed[1], s > 0 && (o.scale.set(s - t.autoPlaySpeed[2] * dispSpeed), dispSpeed = (.99 * dispSpeed).toFixed(3));
-          const u = (window.pageYOffset || document.documentElement.scrollTop) / (document.body.offsetHeight - innerHeight) * 100;
-          zoomAmount = -.01 * u, isLoaded && a.scale.x <= 1 && !imageScale ? imageScale = {
-            x: a.scale.x,
-            y: a.scale.y
-          } : imageScale && (isEdge ? (zoomAmount = 0 / (document.body.offsetHeight - innerHeight) * .01 * 100, a.scale.set(imageScale.x * ((23.25 - 7 * zoomAmount * 1.5) / 10).toFixed(3), imageScale.y * ((15.5 - 7 * zoomAmount) / 10).toFixed(
-            3))) : a.scale.set(imageScale.x * ((23.25 - 7 * zoomAmount * 1.5) / 10).toFixed(3), imageScale.y * ((15.5 - 7 * zoomAmount) / 10).toFixed(3))), r.render(i), isLoaded = !0
-        }), this.init = function() {
-          e.initPixi()
-        };
-        var l = setInterval(function() {
-          true && true && (e.init(), clearInterval(l))
-        }, 50)
-      },
-      function(t, e) {
-        "object" == typeof exports && "object" == typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define("ScrollBooster", [], e) : "object" == typeof exports ? exports.ScrollBooster = e() : t.ScrollBooster = e()
-      }("undefined" != typeof self ? self : this, function() {
-        return function(t) {
-          var e = {};
-
-          function r(i) {
-            if (e[i]) return e[i].exports;
-            var n = e[i] = {
-              i: i,
-              l: !1,
-              exports: {}
-            };
-            return t[i].call(n.exports, n, n.exports, r), n.l = !0, n.exports
-          }
-          return r.m = t, r.c = e, r.d = function(t, e, i) {
-            r.o(t, e) || Object.defineProperty(t, e, {
-              configurable: !1,
-              enumerable: !0,
-              get: i
-            })
-          }, r.n = function(t) {
-            var e = t && t.__esModule ? function() {
-              return t.default
-            } : function() {
-              return t
-            };
-            return r.d(e, "a", e), e
-          }, r.o = function(t, e) {
-            return Object.prototype.hasOwnProperty.call(t, e)
-          }, r.p = "/dist/", r(r.s = 0)
-        }([function(t, e, r) {
-          "use strict";
-          Object.defineProperty(e, "__esModule", {
-            value: !0
-          });
-          var i = Object.assign || function(t) {
-              for (var e = 1; e < arguments.length; e++) {
-                var r = arguments[e];
-                for (var i in r) Object.prototype.hasOwnProperty.call(r, i) && (t[i] = r[i])
-              }
-              return t
-            },
-            n = function() {
-              function t(t, e) {
-                for (var r = 0; r < e.length; r++) {
-                  var i = e[r];
-                  i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(t, i.key, i)
-                }
-              }
-              return function(e, r, i) {
-                return r && t(e.prototype, r), i && t(e, i), e
-              }
-            }();
-          var o = function() {
-            function t() {
-              var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-              if (function(t, e) {
-                  if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
-                }(this, t), e.viewport && e.viewport instanceof Element) {
-                var r = {
-                  handle: e.viewport,
-                  content: e.viewport.children[0],
-                  bounce: !0,
-                  onUpdate: function() {}
-                };
-                this.props = i({}, r, e), this.props.content ? (this.viewport = {
-                  width: this.props.viewport.clientWidth,
-                  height: this.props.viewport.clientHeight
-                }, this.content = {
-                  width: s(this.props.content),
-                  height: a(this.props.content)
-                }, this.position = {
-                  x: 0,
-                  y: 0
-                }, this.velocity = {
-                  x: 0,
-                  y: 0
-                }, this.friction = .95, this.isDragging = !1, this.dragStartPosition = {
-                  x: 0,
-                  y: 0
-                }, this.dragPosition = i({}, this.position), this.isScrollEnabled = !!this.props.emulateScroll, this.isScrolling = !1, this.scrollOffset = {
-                  x: 0,
-                  y: 0
-                }, this.bounce = this.props.bounce, this.boundX = {
-                  from: Math.min(-this.content.width + this.viewport.width, 0),
-                  to: 0
-                }, this.boundY = {
-                  from: Math.min(-this.content.height + this.viewport.height, 0),
-                  to: 0
-                }, this.mode = {
-                  x: "x" == this.props.mode,
-                  y: "y" == this.props.mode,
-                  xy: "x" !== this.props.mode && "y" !== this.props.mode
-                }, this.isRunning = !1, this.rafID = null, this.events = {}, this.animate(), this.handleEvents()) : console.error("Viewport does not have any content")
-              } else console.error('"viewport" config property must be present and must be Element')
-            }
-            return n(t, [{
-              key: "run",
-              value: function() {
-                var t = this;
-                this.isRunning = !0, cancelAnimationFrame(this.rafID), this.rafID = requestAnimationFrame(function() {
-                  return t.animate()
-                })
-              }
-            }, {
-              key: "animate",
-              value: function() {
-                var t = this;
-                this.isRunning && (this.update(), this.notify(), this.rafID = requestAnimationFrame(function() {
-                  return t.animate()
-                }))
-              }
-            }, {
-              key: "update",
-              value: function() {
-                this.applyBoundForce(), this.applyDragForce(), this.applyScrollForce(), this.velocity.x *= this.friction, this.velocity.y *= this.friction, this.mode.y || (this.position.x += this.velocity.x), this.mode.x || (this
-                  .position.y += this.velocity.y), this.bounce && !this.isScrolling || (this.position.x = Math.max(Math.min(this.position.x, this.boundX.to), this.boundX.from), this.position.y = Math.max(Math.min(this.position.y,
-                  this.boundY.to), this.boundY.from)), !this.isDragging && !this.isScrolling && Math.abs(this.velocity.x) < .005 && Math.abs(this.velocity.y) < .005 && (this.isRunning = !1)
-              }
-            }, {
-              key: "applyForce",
-              value: function(t) {
-                this.velocity.x += t.x, this.velocity.y += t.y
-              }
-            }, {
-              key: "applyBoundForce",
-              value: function() {
-                if (this.bounce && !this.isDragging) {
-                  var t = this.position.x < this.boundX.from,
-                    e = this.position.x > this.boundX.to,
-                    r = this.position.y < this.boundY.from,
-                    i = this.position.y > this.boundY.to,
-                    n = {
-                      x: 0,
-                      y: 0
-                    };
-                  if (t || e) {
-                    var o = (t ? this.boundX.from : this.boundX.to) - this.position.x,
-                      s = .1 * o,
-                      a = this.position.x + (this.velocity.x + s) / (1 - this.friction);
-                    t && a < this.boundX.from || e && a > this.boundX.to || (s = .1 * o - this.velocity.x), n.x = s
-                  }
-                  if (r || i) {
-                    var u = (r ? this.boundY.from : this.boundY.to) - this.position.y,
-                      l = .1 * u,
-                      h = this.position.y + (this.velocity.y + l) / (1 - this.friction);
-                    r && h < this.boundY.from || i && h > this.boundY.to || (l = .1 * u - this.velocity.y), n.y = l
-                  }
-                  this.applyForce(n)
-                }
-              }
-            }, {
-              key: "applyDragForce",
-              value: function() {
-                if (this.isDragging) {
-                  var t = this.dragPosition.x - this.position.x,
-                    e = this.dragPosition.y - this.position.y,
-                    r = {
-                      x: t - this.velocity.x,
-                      y: e - this.velocity.y
-                    };
-                  this.applyForce(r)
-                }
-              }
-            }, {
-              key: "applyScrollForce",
-              value: function() {
-                if (this.isScrolling) {
-                  var t = {
-                    x: this.scrollOffset.x - this.velocity.x,
-                    y: this.scrollOffset.y - this.velocity.y
-                  };
-                  this.scrollOffset.x = 0, this.scrollOffset.y = 0, this.applyForce(t)
-                }
-              }
-            }, {
-              key: "setPosition",
-              value: function() {
-                var t = arguments.length > 0 && void 0 !== arguments[0] ? [arguments[0], arguments[1]] : {};
-                this.velocity.x = 0, this.velocity.y = 0, this.position.x = -t[0] || 0, this.position.y = -t[1] || 0, this.run()
-              }
-            }, {
-              key: "getUpdate",
-              value: function() {
-                return {
-                  position: {
-                    x: -this.position.x,
-                    y: -this.position.y
-                  },
-                  viewport: i({}, this.viewport),
-                  content: i({}, this.content)
-                }
-              }
-            }, {
-              key: "notify",
-              value: function() {
-                this.props.onUpdate(this.getUpdate())
-              }
-            }, {
-              key: "updateMetrics",
-              value: function() {
-                this.viewport.width = this.props.viewport.clientWidth, this.viewport.height = this.props.viewport.clientHeight, this.content.width = s(this.props.content), this.content.height = a(this.props.content), this.boundX
-                  .from = Math.min(-this.content.width + this.viewport.width, 0), this.boundY.from = Math.min(-this.content.height + this.viewport.height, 0), this.run()
-              }
-            }, {
-              key: "handleEvents",
-              value: function() {
-                var t = this,
-                  e = this.props.viewport,
-                  r = {
-                    x: 0,
-                    y: 0
-                  },
-                  i = {
-                    x: 0,
-                    y: 0
-                  },
-                  n = !1,
-                  o = function(e) {
-                    var r = void 0,
-                      o = void 0;
-                    n ? (r = e.touches[0].pageX, o = e.touches[0].pageY) : (r = e.pageX, o = e.pageY);
-                    var s = r - i.x,
-                      a = o - i.y;
-                    t.dragPosition.x = t.dragStartPosition.x + s, t.dragPosition.y = t.dragStartPosition.y + a, n || e.preventDefault()
-                  };
-                this.events.pointerdown = function(s) {
-                  var a = void 0,
-                    u = void 0,
-                    l = void 0,
-                    h = void 0;
-                  (n = !(!s.touches || !s.touches[0])) ? (a = s.touches[0].pageX, u = s.touches[0].pageY, l = s.touches[0].clientX, h = s.touches[0].clientY) : (a = s.pageX, u = s.pageY, l = s.clientX, h = s.clientY);
-                  var c = e.getBoundingClientRect();
-                  if (!(l - c.left >= e.clientLeft + e.clientWidth || h - c.top >= e.clientTop + e.clientHeight)) {
-                    t.isDragging = !0, (r.x || r.y) && (t.position.x = r.x, t.position.y = r.y, r.x = 0, r.y = 0), i.x = a, i.y = u, t.dragStartPosition.x = t.position.x, t.dragStartPosition.y = t.position.y, o(s), t.run();
-                    var f, d = void 0;
-                    f = function(e) {
-                      t.isDragging = !1, n ? (window.removeEventListener("touchmove", o), window.removeEventListener("touchend", d)) : (window.removeEventListener("mousemove", o), window.removeEventListener("mouseup", d))
-                    }, n ? (d = window.addEventListener("touchend", f), window.addEventListener("touchmove", o)) : (d = window.addEventListener("mouseup", f), window.addEventListener("mousemove", o))
-                  }
-                };
-                var s = null;
-                this.events.wheel = function(e) {
-                    t.velocity.x = 0, t.isScrollEnabled && (t.isScrolling = !0, t.scrollOffset.x = -e.deltaX, t.scrollOffset.y = -e.deltaY, t.run(), clearTimeout(s), s = setTimeout(function() {
-                      return t.isScrolling = !1
-                    }, 80), e.preventDefault())
-                  }, this.events.scroll = function(e) {
-                    var i = t.props.viewport.scrollLeft,
-                      n = t.props.viewport.scrollTop;
-                    Math.abs(t.position.x + i) > 3 && (t.position.x = -i, t.velocity.x = 0), Math.abs(t.position.y + n) > 3 && (t.position.y = -n, t.velocity.y = 0), r.x = -t.props.viewport.scrollLeft, r.y = -t.props.viewport
-                      .scrollTop
-                  }, this.events.resize = this.updateMetrics.bind(this), this.props.handle.addEventListener("mousedown", this.events.pointerdown), this.props.handle.addEventListener("touchstart", this.events.pointerdown), this.props
-                  .viewport.addEventListener("wheel", this.events.wheel), this.props.viewport.addEventListener("scroll", this.events.scroll), window.addEventListener("resize", this.events.resize)
-              }
-            }, {
-              key: "destroy",
-              value: function() {
-                this.props.handle.removeEventListener("mousedown", this.events.pointerdown), this.props.handle.removeEventListener("touchstart", this.events.pointerdown), this.props.viewport.removeEventListener("wheel", this.events
-                  .wheel), this.props.viewport.removeEventListener("scroll", this.events.scroll), window.removeEventListener("resize", this.events.resize)
-              }
-            }]), t
-          }();
-
-          function s(t) {
-            return Math.max(t.offsetWidth, t.scrollWidth)
-          }
-
-          function a(t) {
-            return Math.max(t.offsetHeight, t.scrollHeight)
-          }
-          e.default = o, t.exports = e.default
-        }])
-      });
-  </script>
-  <script>
-    //             console.log(document.body.clientWidth);
-    // if (document.body.clientWidth > 1025) {
-    //     console.log('сработка');
-    new CanvasSlideshow({
-      autoPlay: true,
-      autoPlaySpeed: [1, 4, 2.2],
-      displaceScale: [200, 50]
-    });
-    // }
-  </script>
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script>
-    $(function() {
-      function scrollBlock() {
-        var windowTop = $(window).scrollTop();
-        var promoTop = Math.floor($('#promo').offset().top);
-        var discographyTop = Math.floor($('#discography').offset().top);
-        var aboutTop = Math.floor($('#about').offset().top);
-        var collaboratorsTop = Math.floor($('#collaborators').offset().top);
-        var contactsTop = Math.floor($('#contacts').offset().top);
-
-        if (windowTop >= contactsTop) {
-          $(".header__menu-item").removeClass('header__menu-item--active');
-          $('a[href="#contacts"').parent().addClass('header__menu-item--active');
-        } else if (windowTop >= collaboratorsTop) {
-          $(".header__menu-item").removeClass('header__menu-item--active');
-          $('a[href="#collaborators"').parent().addClass('header__menu-item--active');
-        } else if (windowTop >= aboutTop) {
-          $(".header__menu-item").removeClass('header__menu-item--active');
-          $('a[href="#about"').parent().addClass('header__menu-item--active');
-        } else if (windowTop >= discographyTop) {
-          $(".header__menu-item").removeClass('header__menu-item--active');
-          $('a[href="#discography"').parent().addClass('header__menu-item--active');
-        } else if (windowTop > 0) {
-          $(".header__menu-item").removeClass('header__menu-item--active');
-          $('a[href="#promo"').parent().addClass('header__menu-item--active');
-        }
-      }
-
-      scrollBlock();
-      $(window).on('scroll', scrollBlock);
-      $(".header__menu-item a").click(function() {
-        var elementClick = $(this).attr("href");
-        $(".header__menu-item").removeClass('header__menu-item--active');
-        $(this).parent().addClass('header__menu-item--active');
-        var destination = $(elementClick).offset().top;
-        $('html, body').animate({
-          scrollTop: destination
-        }, 500);
-        return false;
-      });
-    });
-  </script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

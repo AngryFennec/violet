@@ -5,3 +5,5 @@
 
 
 //= modules/player.js
+//= modules/animation.js
+
