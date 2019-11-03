@@ -2,6 +2,11 @@
 
 
 (function () {
+
+  /*window.onload = function() {
+    var context = new AudioContext();
+  }*/
+
   window.onkeydown = function(e) {
       return !(e.keyCode == 32);
   };
@@ -90,7 +95,16 @@
         "url": "https://521dimensions.com/song/Anthem-Emancipator.mp3",
         "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
       }
-    ],
-		"autoplay": true
+    ]
   });
+
+    var silence2 = document.querySelector('#silence2');
+    console.log(silence2);
+    silence2.play();
+    silence2.addEventListener('ended', function() {
+      //Amplitude.play();
+      Amplitude.playSongAtIndex(0);
+      var playPause = document.querySelector('#play-pause');
+    });
+
 })();
