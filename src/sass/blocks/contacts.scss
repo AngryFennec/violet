@@ -31,7 +31,7 @@
 .contacts__value {
     position: relative;
     margin-bottom: 3px;
-
+    
     &::after {
         position: absolute;
         content: "";
@@ -40,6 +40,17 @@
         height: 1px;
         width: 170px;
         background-color: $text-contact;
+    }
+
+    & a {
+        text-decoration: none;
+        color: $text-contact;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    & a:hover {
+        font-weight: 900;
     }
 }
 
@@ -110,6 +121,11 @@
     .contacts__value {
         font-size: 18px;
         line-height: 22px;
+
+        & a {
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
 
     .contacts__type {
