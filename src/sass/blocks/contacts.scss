@@ -94,3 +94,25 @@
         flex-direction: row;
     }
 }
+
+@media (max-width: 500px) {
+    .contacts {
+        padding: 30px 14px;
+    }
+
+    .contacts__header {
+        margin-top: 0;
+        font-size: 36px;
+        line-height: 49px;
+        margin-bottom: 5px;
+    }
+
+    .contacts__value {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .contacts__type {
+        margin-bottom: 8px;
+    }
+}
