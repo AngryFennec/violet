@@ -1,0 +1,121 @@
+.song {
+    padding: 15% 10.2% 5.1% 10.2%;
+    background-color: $song-back;
+    color: $purple;
+}
+
+.song__header {
+    position: relative;
+    margin: 0;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.4vw;
+    line-height: 3.44vw;
+    letter-spacing: 0.02em;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        height: 1px;
+        width: 240px;
+        background: $purple
+    }
+}
+
+.song__text-block {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    margin-top: 100px;
+    margin-bottom: 90px;
+
+    & p {
+        margin: 0 0 22px 0;
+    }
+}
+
+.song__next-wrapper {
+    text-align: right;
+}
+.song__next {
+    position: relative;
+    display: inline-block;
+    color: $purple;
+    text-decoration: none;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    padding-right: 45px;
+    background: url('../img/arrow.png') 100% 50% no-repeat;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -10px;
+        height: 1px;
+        width: 240px;
+        background: $purple
+    }
+
+    &:hover::after {
+        content: "";
+        position: absolute;
+        right: 45px;
+        left: 0;
+        bottom: 0px;
+        height: 1px;
+        width: calc(100% - 45px);
+        background: $purple
+    }
+}
+
+@media (max-width: 1025px) {
+    .song {
+        padding: 14.64% 9.75% 4.88% 9.75%;
+    }
+
+    .song__header {
+        font-size: 4.68vw;
+        line-height: 6.44vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .song {
+        padding: 54px 8px 70px 8px;
+    }
+
+    .song__header {
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: 0;
+
+        &::after {
+            bottom: -13px;
+            height: 1px;
+            width: 240px;
+            background: $purple
+        }
+    }
+
+    .song__text-block {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 28px;
+        margin-bottom: 60px;
+
+        & p {
+            margin-bottom: 18px;
+
+        }
+    }
+}
