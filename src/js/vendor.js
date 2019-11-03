@@ -4,3 +4,4 @@
  */
 
 //= vendor/picturefill.js
+//= vendor/amplitude.js
