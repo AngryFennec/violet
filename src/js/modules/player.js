@@ -3,9 +3,9 @@
 
 (function () {
 
-  /*window.onload = function() {
-    var context = new AudioContext();
-  }*/
+  window.onload = function() {
+
+  };
 
   window.onkeydown = function(e) {
       return !(e.keyCode == 32);
@@ -19,92 +19,78 @@
     },
     "songs": [
       {
-        "name": "Risin' High (feat Raashan Ahmad)",
-        "artist": "Ancient Astronauts",
-        "album": "We Are to Answer",
-        "url": "https://521dimensions.com/song/Ancient Astronauts - Risin' High (feat Raashan Ahmad).mp3",
-        "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/we-are-to-answer.jpg"
+        "name": "(Tear a Hole in) This Plastic Night",
+        "artist": "Artist",
+        "album": "Violet and The Sun",
+        "url": "../music/(Tear a Hole in) This Plastic Night.mp3",
       },
       {
-        "name": "The Gun",
-        "artist": "Lorn",
-        "album": "Ask The Dust",
-        "url": "https://521dimensions.com/song/08 The Gun.mp3",
-        "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/ask-the-dust.jpg"
+        "name": "Amaurot",
+        "artist": "Artist",
+        "album": "Violet and The Sun",
+        "url": "../music/Amaurot.mp3",
       },
       {
-        "name": "Anvil",
-        "artist": "Lorn",
-        "album": "Anvil",
-        "url": "https://521dimensions.com/song/LORN - ANVIL.mp3",
-        "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/anvil.jpg"
+        "name": "All I am is Love",
+        "artist": "Artist",
+        "album": "Violet and The Sun",
+        "url": "../music/All I Am is Love.mp3",
       },
       {
-        "name": "I Came Running",
-        "artist": "Ancient Astronauts",
-        "album": "We Are to Answer",
-        "url": "https://521dimensions.com/song/ICameRunning-AncientAstronauts.mp3",
-        "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/we-are-to-answer.jpg"
+        "name": "To Watch You Grow Old",
+        "artist": "Artist",
+        "album": "Violet and The Sun",
+        "url": "../music/To Watch You Grow Old.mp3",
       },
       {
-        "name": "First Snow",
-        "artist": "Emancipator",
-        "album": "Soon It Will Be Cold Enough",
-        "url": "https://521dimensions.com/song/FirstSnow-Emancipator.mp3",
-        "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
+        "name": "Violet and The Sun",
+        "artist": "Artist",
+        "album": "Violet and The Sun",
+        "url": "../music/Violet and The Sun.mp3",
       },
       {
-        "name": "Terrain",
-        "artist": "pg.lost",
-        "album": "Key",
-        "url": "https://521dimensions.com/song/Terrain-pglost.mp3",
-        "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/key.jpg"
+        "name": "Stardust",
+        "artist": "Artist",
+        "album": "Violet and The Sun",
+        "url": "../music/Stardust.mp3",
       },
       {
-        "name": "Vorel",
-        "artist": "Russian Circles",
-        "album": "Guidance",
-        "url": "https://521dimensions.com/song/Vorel-RussianCircles.mp3",
-        "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/guidance.jpg"
+        "name": "Constant",
+        "artist": "Artist",
+        "album": "Violet and The Sun",
+        "url": "../music/Constant.mp3",
       },
       {
-        "name": "Intro / Sweet Glory",
-        "artist": "Jimkata",
-        "album": "Die Digital",
-        "url": "https://521dimensions.com/song/IntroSweetGlory-Jimkata.mp3",
-        "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/die-digital.jpg"
+        "name": "George and Martha",
+        "artist": "Artist",
+        "album": "Violet and The Sun",
+        "url": "../music/George and Martha.mp3",
       },
       {
-        "name": "Offcut #6",
-        "artist": "Little People",
-        "album": "We Are But Hunks of Wood Remixes",
-        "url": "https://521dimensions.com/song/Offcut6-LittlePeople.mp3",
-        "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/we-are-but-hunks-of-wood.jpg"
+        "name": "The Ruby Song",
+        "artist": "Artist",
+        "album": "Violet and The Sun",
+        "url": "../music/The Ruby Song.mp3",
       },
-      {
-        "name": "Dusk To Dawn",
-        "artist": "Emancipator",
-        "album": "Dusk To Dawn",
-        "url": "https://521dimensions.com/song/DuskToDawn-Emancipator.mp3",
-        "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/from-dusk-to-dawn.jpg"
-      },
-      {
-        "name": "Anthem",
-        "artist": "Emancipator",
-        "album": "Soon It Will Be Cold Enough",
-        "url": "https://521dimensions.com/song/Anthem-Emancipator.mp3",
-        "cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-      }
     ]
   });
-
     var silence2 = document.querySelector('#silence2');
-    console.log(silence2);
-    silence2.play();
+  window.onload = function() {
+    //var context = new AudioContext();
+
+    const playPromise = silence2.play();
+if (playPromise !== null){
+    playPromise.catch(() => { silence2.play(); })
+}
     silence2.addEventListener('ended', function() {
       //Amplitude.play();
       Amplitude.playSongAtIndex(0);
-      var playPause = document.querySelector('#play-pause');
     });
+  }
+/*
+    if (silence2) {
+      silence2.play();
+    }*/
 
+//}
 })();
