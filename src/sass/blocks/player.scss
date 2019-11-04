@@ -328,4 +328,22 @@ padding-top: 45px;}
       margin-top: -8px;
       background-color: #192029 !important;
       background: #192029 !important; } }
+
+
+@media(max-width: 500px) {
+  #player {
+    max-width: 90%;
+
+  }
+  .meta-data-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  div#player-bottom {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+  }
+}
 }
