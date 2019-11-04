@@ -95,6 +95,7 @@ color: #8B8492;
   padding-left: 0;
   color: $text-contact;
   border-bottom: 1px solid #230045;
+  cursor: pointer;
 }
 
 .subscribe__alert {
@@ -111,11 +112,58 @@ color: #8B8492;
 
 @media(max-width: 500px) {
   .subscribe {
-    padding: 30px 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 45px;
   }
 
   .subscribe__header {
-    font-size: 36px;
-    line-height: 49px;
+    font-size: 24px;
+line-height: 33px;
+margin-top: 0;
+margin-bottom: 35px;
+  }
+
+  .subscribe__form-item {
+    margin-bottom: 16px;
+  }
+
+  .subscribe__form-input {
+    font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+max-width: 129px;
+padding-bottom: 1px;
+
+&::placeholder {
+  font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+}
+
+&--zip {
+  max-width: 89px;
+}
+
+&--phone {
+  max-width: 168px;
+}
+  }
+
+  .subscribe__form-label {
+    font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+  }
+
+  .subscribe__form-list {
+    margin-bottom: 13px;
+  }
+
+  .subscribe__alert {
+    font-size: 12px;
+line-height: 16px;
+margin-bottom: 19px;
   }
 }

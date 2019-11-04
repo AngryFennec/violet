@@ -6,3 +6,4 @@
 
 //= modules/player.js
 //= modules/animation.js
+//= modules/form.js

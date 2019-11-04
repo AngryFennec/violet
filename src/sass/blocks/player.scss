@@ -1,5 +1,5 @@
 #player {
-    max-width: 600px;
+    max-width: 500px;
     width: 100%;
     height: 200px;
     position: fixed;
@@ -191,8 +191,11 @@ padding-top: 45px;}
         display: none; }
 */
       .now-playing-name {
+        max-width: 90%;
+      }
+      .meta-data-container {
         padding-left: 50px;
-
+        padding-right: 30px;
       }
 
       $height: 30px;
@@ -214,15 +217,7 @@ padding-top: 45px;}
 
       // Webkit cannot style progress so we fake it with a long shadow
       // on the thumb element
-      @function webkit-slider-thumb-shadow($i: 1) {
-        $val: #{$i}px 0 0 -#{($thumb-height - $track-height) / 2 } #{$upper-color};
-        @if $i == 1 {
-          @for $k from 2 through 1000 {
-            $val: #{$val}, webkit-slider-thumb-shadow($k);
-          }
-        }
-        @return $val;
-      }
+
 
       .e-range {
         display: block;
@@ -257,7 +252,6 @@ padding-top: 45px;}
         border: 0;
         top: 50%;
         margin-top: (-$thumb-height/2);
-        box-shadow: webkit-slider-thumb-shadow();
         transition: background-color 150ms;
       }
 
