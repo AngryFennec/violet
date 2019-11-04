@@ -24,8 +24,6 @@ window.CanvasSlideshow = function(t) {
         a = new PIXI.Sprite(s);
     a.anchor.set(0.5), a.width = 840, a.height = 670, a.position.x = innerWidth / 2, a.y = innerHeight / 2, i.addChild(a);
     var u = new PIXI.ticker.Ticker;
-    console.log(a.scale.x);
-    console.log(a.scale.y);
     u.autoStart = !0, u.add(function(e) {
         const s = o.scale.x;
         n.x += t.autoPlaySpeed[0] * e, n.y += t.autoPlaySpeed[1], s > 0 && (o.scale.set(s - t.autoPlaySpeed[2] * dispSpeed), dispSpeed = (.99 * dispSpeed).toFixed(3));
