@@ -123,11 +123,12 @@ padding-top: 45px;}
       div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider {
         width: calc(100% - 30px);
         -webkit-appearance: none;
-        display: block;
+        display: none;
         margin-left: 10px;
       background: transparent;
     height: 3px;
-  border-bottom: 1px solid white;}
+  border-bottom: 1px solid white;
+outline: none;}
 
 
     /*
@@ -207,6 +208,7 @@ padding-top: 45px;}
         width: 80px;
         -webkit-appearance: none;
         background-color: #9a905d;
+        outline: none;
       }
 
       input[type='range']::-webkit-slider-runnable-track {
@@ -214,12 +216,14 @@ padding-top: 45px;}
         -webkit-appearance: none;
         //color: #13bba4;
         margin-top: -1px;
+        outline: none;
       }
 
       input[type='range']::-webkit-slider-thumb {
         width: 0px;
         -webkit-appearance: none;
         height: 3px;
+        outline: none;
         //background: #434343;
         box-shadow: -80px 0 0 80px white;
       }
@@ -228,16 +232,20 @@ padding-top: 45px;}
   /** FF*/
   input[type="range"]::-moz-range-progress {
     background-color: #43e5f7;
+    outline: none;
   }
   input[type="range"]::-moz-range-track {
     background-color: #9a905d;
+    outline: none;
   }
   /* IE*/
   input[type="range"]::-ms-fill-lower {
     background-color: #43e5f7;
+    outline: none;
   }
   input[type="range"]::-ms-fill-upper {
     background-color: #9a905d;
+    outline: none;
   }
 
 
