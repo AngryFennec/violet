@@ -99,15 +99,19 @@ color: #8B8492;
 }
 
 .subscribe__alert {
-  font-family: "DM Serif Display";
-  font-style: italic;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  margin-bottom: 80px;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.025em;
+
+      & b {
+        font-weight: 500;
+      }
   color: #230045;
   width: 85%;
   max-width: 645px;
+}
+.subscribr__alert-link {
+  color: #230045;
 }
 
 @media(max-width: 500px) {
@@ -162,8 +166,12 @@ line-height: 17px;
   }
 
   .subscribe__alert {
-    font-size: 12px;
-line-height: 16px;
-margin-bottom: 19px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.025em;
+
+    & b {
+      font-weight: 500;
+    }
   }
 }
