@@ -123,7 +123,8 @@ padding-top: 45px;}
       input[type="range"].amplitude-volume-slider {
         width: calc(100% - 30px);
         -webkit-appearance: none;
-        display: none;
+    //    display: none;
+    display: block;
         margin-left: 10px;
       background: transparent;
     height: 3px;
@@ -138,9 +139,9 @@ outline: none;}
   border: none;
   cursor: pointer;
 }
-  .volume-link:hover+input[type="range"].amplitude-volume-slider {
+/*  .volume-link:hover+input[type="range"].amplitude-volume-slider {
     display: block;
-  }
+  }*/
 
       .now-playing-name {
         max-width: 90%;

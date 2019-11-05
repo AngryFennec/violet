@@ -97,5 +97,23 @@ if (playPromise !== null){
 var closeBtn = document.querySelector('.close');
 closeBtn.addEventListener('click', function() {
   Amplitude.playSongAtIndex(0);
-})
+});
+
+var range = document.querySelector('.amplitude-volume-slider');
+range.classList.add('visually-hidden');
+var changeDisplayRange = function () {
+  if (!range.classList.contains('visually-hidden')) {
+    range.classList.add('visually-hidden');
+  }
+}
+var showRange = function() {
+  if (range.classList.contains('visually-hidden')) {
+    range.classList.remove('visually-hidden');
+  }
+  setTimeout(changeDisplayRange, 5000)
+}
+
+var volumeBtn = document.querySelector('.volume-link');
+volumeBtn.addEventListener('click', showRange);
+volumeBtn.addEventListener('mouseover', showRange);
 })();
