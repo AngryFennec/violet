@@ -333,7 +333,6 @@ padding-top: 45px;}
 @media(max-width: 500px) {
   #player {
     max-width: 90%;
-
   }
   .meta-data-container {
     padding-left: 10px;
@@ -346,4 +345,10 @@ padding-top: 45px;}
     flex-direction: column;
   }
 }
+}
+
+@media (max-width: 500px) {
+  #player {
+    display: none;
+  }
 }

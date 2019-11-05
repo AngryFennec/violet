@@ -328,42 +328,46 @@ new WOW().init();
 //прокрутка меню
 $(function() {
     function scrollBlock() {
-    var windowTop = $(window).scrollTop();
-    var promoTop = Math.floor($('#promo').offset().top);
-    var discographyTop = Math.floor($('#discography').offset().top);
-    var aboutTop = Math.floor($('#about').offset().top);
-    var collaboratorsTop = Math.floor($('#collaborators').offset().top);
-    var contactsTop = Math.floor($('#contacts').offset().top);
+        if (document.body.clientWidth >= 500) {
+            var windowTop = $(window).scrollTop();
+            var promoTop = Math.floor($('#promo').offset().top);
+            var discographyTop = Math.floor($('#discography').offset().top);
+            var aboutTop = Math.floor($('#about').offset().top);
+            var collaboratorsTop = Math.floor($('#collaborators').offset().top);
+            var contactsTop = Math.floor($('#contacts').offset().top);
 
-    if (windowTop >= contactsTop) {
-        $(".header__menu-item").removeClass('header__menu-item--active');
-        $('a[href="#contacts"').parent().addClass('header__menu-item--active');
-    } else if (windowTop >= collaboratorsTop) {
-        $(".header__menu-item").removeClass('header__menu-item--active');
-        $('a[href="#collaborators"').parent().addClass('header__menu-item--active');
-    } else if (windowTop >= aboutTop) {
-        $(".header__menu-item").removeClass('header__menu-item--active');
-        $('a[href="#about"').parent().addClass('header__menu-item--active');
-    } else if (windowTop >= discographyTop) {
-        $(".header__menu-item").removeClass('header__menu-item--active');
-        $('a[href="#discography"').parent().addClass('header__menu-item--active');
-    } else if (windowTop > 0) {
-        $(".header__menu-item").removeClass('header__menu-item--active');
-        $('a[href="#promo"').parent().addClass('header__menu-item--active');
-    }
+            if (windowTop >= contactsTop) {
+                $(".header__menu-item").removeClass('header__menu-item--active');
+                $('a[href="#contacts"').parent().addClass('header__menu-item--active');
+            } else if (windowTop >= collaboratorsTop) {
+                $(".header__menu-item").removeClass('header__menu-item--active');
+                $('a[href="#collaborators"').parent().addClass('header__menu-item--active');
+            } else if (windowTop >= aboutTop) {
+                $(".header__menu-item").removeClass('header__menu-item--active');
+                $('a[href="#about"').parent().addClass('header__menu-item--active');
+            } else if (windowTop >= discographyTop) {
+                $(".header__menu-item").removeClass('header__menu-item--active');
+                $('a[href="#discography"').parent().addClass('header__menu-item--active');
+            } else if (windowTop > 0) {
+                $(".header__menu-item").removeClass('header__menu-item--active');
+                $('a[href="#promo"').parent().addClass('header__menu-item--active');
+            }
+        }
     }
 
     scrollBlock();
     $(window).on('scroll', scrollBlock);
     $(".header__menu-item a").click(function() {
-    var elementClick = $(this).attr("href");
-    $(".header__menu-item").removeClass('header__menu-item--active');
-    $(this).parent().addClass('header__menu-item--active');
-    var destination = $(elementClick).offset().top;
-    $('html, body').animate({
-        scrollTop: destination
-    }, 500);
-    return false;
+        if (document.body.clientWidth >= 500) {
+            var elementClick = $(this).attr("href");
+            $(".header__menu-item").removeClass('header__menu-item--active');
+            $(this).parent().addClass('header__menu-item--active');
+            var destination = $(elementClick).offset().top;
+            $('html, body').animate({
+                scrollTop: destination
+            }, 500);
+            return false;
+        }
     });
 
     //анимация для песен
@@ -385,10 +389,19 @@ $(function() {
             $(currentSong).show();
             $('html, body').animate({scrollTop: songsTop}, 500);
         } else {
-            $('html, body').animate({scrollTop: songsTop}, 500);
-            $( ".songs-block" ).animate({minHeight: "100vh"}, 500 );
-            $(currentSong).animate({marginTop: "100vh"}, 500 ).show(0).animate({marginTop: "0"}, 500 );                     
-
+            if (document.body.clientWidth >= 500) {
+                $('html, body').animate({scrollTop: songsTop}, 500);
+                $( ".songs-block" ).animate({minHeight: "100vh"}, 500 );
+                $(currentSong).animate({marginTop: "100vh"}, 500 ).show(0).animate({marginTop: "0"}, 500 );        
+            } else {
+                $(currentSong).show(0);    
+                $('html, body').animate({scrollTop: songsTop}, 500);    
+            }
         }
+    })
+
+    //куки
+    $('.close').on('click', function(){
+        $('.cookie').hide();
     })
 });
