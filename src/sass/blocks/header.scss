@@ -111,14 +111,33 @@
 
 @media (max-width: 500px) {
     .header {
+        height: 487px;
+        min-height: 487px;
         &::after {
-            background: url('../img/bg-mobile.jpg') no-repeat center center;
-            background-size: cover;
+            background: url('../img/mobile-back2.jpg') no-repeat 0 0;
+            background-size: 100% auto;
         }
     }
 
     .header__logo-block img {
+        top: -20px;
+        left: 20px;
         width: 83px;
         height: 83px;
+    }
+
+    .header__menu-list {
+        display: none;
+    }
+}
+
+@media (max-width: 374px) {
+    .header {
+        height: 410px;
+        min-height: 410px;
+        &::after {
+            background: url('../img/mobile-back2.jpg') no-repeat 0 0;
+            background-size: contain;
+        }
     }
 }
