@@ -126,7 +126,9 @@ padding-top: 45px;}
         display: block;
         margin-left: 10px;
       background: transparent;
-    height: 20px;}
+    height: 3px;
+  border-bottom: 1px solid white;}
+
 
     /*
       div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider:focus {
@@ -198,120 +200,45 @@ padding-top: 45px;}
         padding-right: 30px;
       }
 
-      $height: 30px;
-      $thumb-height: 13px;
-      $track-height: 3px;
-      $upper-height: 1px;
-
-      // colours
-    //  $upper-color: #cfcfcf;
-      $upper-color: gray;
-      //$lower-color: #0199ff;
-      $lower-color: white;
-      $thumb-color: #0199ff;
-      $thumb-hover-color: #55c2ff;
-
-      //$upper-background: linear-gradient(to bottom, $upper-color, $upper-color) 100% 50% / 100% $track-height no-repeat transparent;
-      $upper-background:white;
-      $lower-background: linear-gradient(to bottom, $lower-color, $lower-color) 100% 50% / 100% $track-height no-repeat transparent;
-
-      // Webkit cannot style progress so we fake it with a long shadow
-      // on the thumb element
-
-
-      .e-range {
-        display: block;
-        appearance: none;
-        width: 100%;
-        margin: 0;
-        height: $height;
+      /*Chrome*/
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+      input[type='range'] {
         overflow: hidden;
-        cursor: pointer;
-
-        &:focus {
-          outline: none;
-        }
+        width: 80px;
+        -webkit-appearance: none;
+        background-color: #9a905d;
       }
 
-      // Webkit
-      .e-range::-webkit-slider-runnable-track {
-        width: 100%;
-        height: $height;
-        background: $lower-background;
-        border-bottom: 1px solid white;
+      input[type='range']::-webkit-slider-runnable-track {
+        height: 3px;
+        -webkit-appearance: none;
+        //color: #13bba4;
+        margin-top: -1px;
       }
 
-      .e-range::-webkit-slider-thumb {
-        position: relative;
-        appearance: none;
-        height: $thumb-height;
-        width: $thumb-height;
-      //  background: $thumb-color;
-      background: transparent;
-        border-radius: 100%;
-        border: 0;
-        top: 50%;
-        margin-top: (-$thumb-height/2);
-        transition: background-color 150ms;
+      input[type='range']::-webkit-slider-thumb {
+        width: 0px;
+        -webkit-appearance: none;
+        height: 3px;
+        //background: #434343;
+        box-shadow: -80px 0 0 80px white;
       }
 
-      // Firefox
-      .e-range::-moz-range-track,
-      .e-range::-moz-range-progress {
-        width: 100%;
-        height: $height;
-        background: $upper-background;
-      }
-
-      .e-range::-moz-range-progress {
-        background: $lower-background;
-      }
-
-      .e-range::-moz-range-thumb {
-        appearance: none;
-        margin: 0;
-        height: $thumb-height;
-        width: $thumb-height;
-        //background: $thumb-color;
-        background: transparent;
-        border-radius: 100%;
-        border: 0;
-        transition: background-color 150ms;
-      }
-
-      // Internet Exploder
-      .e-range::-ms-track {
-        width: 100%;
-        height: $height;
-        border: 0;
-        // color needed to hide track marks
-        color: transparent;
-        background: transparent;
-      }
-
-      .e-range::-ms-fill-lower {
-        background: $lower-background;
-      }
-
-      .e-range::-ms-fill-upper {
-        background: $upper-background;
-      }
-
-      .e-range::-ms-thumb {
-        appearance: none;
-        height: $thumb-height;
-        width: $thumb-height;
-      //  background: $thumb-color;
-      background: transparent;
-        border-radius: 100%;
-        border: 0;
-        transition: background-color 150ms;
-        // IE Edge thinks it can support -webkit prefixes
-        top: 0;
-        margin: 0;
-        box-shadow: none;
-      }
-
+  }
+  /** FF*/
+  input[type="range"]::-moz-range-progress {
+    background-color: #43e5f7;
+  }
+  input[type="range"]::-moz-range-track {
+    background-color: #9a905d;
+  }
+  /* IE*/
+  input[type="range"]::-ms-fill-lower {
+    background-color: #43e5f7;
+  }
+  input[type="range"]::-ms-fill-upper {
+    background-color: #9a905d;
+  }
 
 
   @-moz-document url-prefix() {

@@ -74,7 +74,7 @@
       },
     ]
   });
-    var silence2 = document.querySelector('#silence2');
+    /*var silence2 = document.querySelector('#silence2');
   window.onload = function() {
     //var context = new AudioContext();
 
@@ -92,5 +92,10 @@ if (playPromise !== null){
       silence2.play();
     }*/
 
-//}
+//}*/
+
+var closeBtn = document.querySelector('.close');
+closeBtn.addEventListener('click', function() {
+  Amplitude.play();
+})
 })();
