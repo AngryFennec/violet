@@ -29,7 +29,15 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    color: $purple
+    color: $purple;
+
+    & a {
+      color: $purple;
+
+      &:visited {
+        color: $purple;
+      }
+    }
 }
 
 @media (max-width: 500px) {

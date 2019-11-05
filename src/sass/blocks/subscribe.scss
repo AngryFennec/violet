@@ -104,14 +104,19 @@ color: #8B8492;
       letter-spacing: 0.025em;
 
       & b {
-        font-weight: 500;
+        font-weight: 600;
       }
   color: #230045;
   width: 85%;
   max-width: 645px;
 }
-.subscribr__alert-link {
+.subscribe__alert-link {
   color: #230045;
+  font-weight: 600;
+
+  &:visited {
+    color: #230045;
+  }
 }
 
 @media(max-width: 500px) {
