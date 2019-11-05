@@ -1,7 +1,15 @@
+.songs-block {
+    min-height: 0;
+    margin-top: 1px;
+}
+
 .song {
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: none;
     padding: 15% 10.2% 5.1% 10.2%;
     background-color: $song-back;
-    color: $purple;
+    color: $purple; 
 }
 
 .song__header {

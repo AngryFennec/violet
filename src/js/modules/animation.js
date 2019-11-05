@@ -365,4 +365,30 @@ $(function() {
     }, 500);
     return false;
     });
+
+    //анимация для песен
+    $('.songs-block a').on('click', function(evt){
+        evt.preventDefault();
+        var currentSong = $(this).attr('href');
+        var songsTop = Math.floor($('.songs-block').offset().top);
+            $('.song').hide();
+            $(currentSong).show();
+            $('html, body').animate({scrollTop: songsTop}, 500);
+    });
+
+    $('.discography__album-songs a').on('click', function(evt){
+        evt.preventDefault();
+        var currentSong = $(this).attr('href');
+        var songsTop = Math.floor($('.songs-block').offset().top);
+        if ($('.songs-block').height() > 2) {
+            $('.song').hide();
+            $(currentSong).show();
+            $('html, body').animate({scrollTop: songsTop}, 500);
+        } else {
+            $('html, body').animate({scrollTop: songsTop}, 500);
+            $( ".songs-block" ).animate({minHeight: "100vh"}, 500 );
+            $(currentSong).animate({marginTop: "100vh"}, 500 ).show(0).animate({marginTop: "0"}, 500 );                     
+
+        }
+    })
 });
