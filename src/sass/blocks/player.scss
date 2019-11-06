@@ -24,8 +24,8 @@
   font-family: "DM Serif Display";
   font-style: italic;
   font-weight: normal;
-  font-size: 36px;
-  line-height: 49px;
+  font-size: 18px;
+  line-height: 25px;
   color: #FFFFFF;
 
 
@@ -55,7 +55,7 @@
 
 
   div#player-bottom {
-    padding-left: 55px;
+    padding-left: 75px;
     padding-right: 25px;
   display: flex;}
     div#player-bottom div#control-container {
@@ -68,25 +68,26 @@
       height: 60px;
       padding-top: 18px; }
       div#player-bottom div#control-container div#prev-container div#previous {
-        background: url("../img/fbd-btn.svg") no-repeat center center;
-        width: 40px;
-        height: 24px;
+        background: url("../img/fbd-btn.svg") no-repeat center center ;
+      //  background-size: contain;
+      width: 40px;
+      height: 25px;
         cursor: pointer;
         margin: auto;
-      margin-right: 33px;}
+      margin-right: 23px;}
     div#player-bottom div#control-container div#play-pause-container {
           height: 60px; }
       div#player-bottom div#control-container div#play-pause-container div#play-pause {
-        width: 60px;
-        height: 60px;
-
+        width: 20px;
+        height: 20px;
+padding-top: 40px;
         cursor: pointer;
         margin: auto;
-      margin-right: 33px;}
+      margin-right: 23px;}
         div#player-bottom div#control-container div#play-pause-container div#play-pause.amplitude-playing {
-          background: url("../img/pause-btn.svg") no-repeat center center; }
+          background: url("../img/pause.svg") no-repeat center center; }
         div#player-bottom div#control-container div#play-pause-container div#play-pause.amplitude-paused {
-          background: url("../img/play-btn.svg") no-repeat center center; }
+          background: url("../img/play.svg") no-repeat center center; }
     div#player-bottom div#control-container div#next-container {
       height: 60px;
       padding-top: 18px; }
@@ -149,9 +150,10 @@ outline: none;}
 
       .now-playing-name {
         max-width: 90%;
+
       }
       .meta-data-container {
-        padding-left: 50px;
+        padding-left: 75px;
         padding-right: 30px;
       }
 
