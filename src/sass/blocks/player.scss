@@ -12,11 +12,13 @@
 
 @media (max-width: 1025px) {
     #player {
+      max-width: 310px;
         position: absolute;
         bottom: 13%;
         left: 50%;
         transform: translateX(-50%);
     }
+
 }
 
 .player {
@@ -29,6 +31,7 @@
   line-height: 25px;
   color: #FFFFFF;
 
+  
 
 
 
