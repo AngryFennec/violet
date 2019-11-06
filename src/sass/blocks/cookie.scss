@@ -15,7 +15,8 @@
 
 .close {
     position: absolute;
-    top: 50px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 60px;
     height: 56px;
     width: 56px;
@@ -38,7 +39,18 @@
         color: $purple;
       }
     }
+
+    & span {
+        margin-top: 8px;
+        display: block;
+        font-family: 'DM Serif Display';
+        font-style: italic;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 21px;
+    }
 }
+
 
 @media (max-width: 500px) {
     .cookie {
@@ -47,7 +59,6 @@
     }
 
     .close{
-        top: 30px;
         right: 15px;
     }
 
