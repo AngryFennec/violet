@@ -20,7 +20,8 @@
 }
 
 .player {
-  background-color: transparent;
+  //background-color: transparent;
+  background: red;
   font-family: "DM Serif Display";
   font-style: italic;
   font-weight: normal;
@@ -55,7 +56,7 @@
 
 
   div#player-bottom {
-    padding-left: 75px;
+    padding-left: 25px;
     padding-right: 25px;
   display: flex;}
     div#player-bottom div#control-container {
@@ -63,7 +64,7 @@
       padding-top: 38px;
       padding-bottom: 15px;
     display: flex;
-  margin-right: 70px;}
+  margin-right: 35px;}
     div#player-bottom div#control-container div#prev-container {
       height: 60px;
       padding-top: 18px; }
@@ -153,8 +154,8 @@ outline: none;}
 
       }
       .meta-data-container {
-        padding-left: 75px;
-        padding-right: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
       }
 
       /*Chrome*/
