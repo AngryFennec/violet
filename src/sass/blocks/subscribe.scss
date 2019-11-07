@@ -34,6 +34,11 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 39px;
+
+  &:first-child .subscribe__form-input::placeholder{
+    color: $text-contact;
+  }
+  
 }
 
 .subscribe__form-input {
@@ -46,7 +51,7 @@
   line-height: 22px;
   outline:none;
 
-  color: $text-contact;
+  color: #A0999F;
 
   &:focus {
     outline:none;
@@ -58,8 +63,10 @@ font-weight: normal;
 font-size: 18px;
 line-height: 22px;
 
-color: $text-contact;
+color: $placeholder;
   }
+
+  
 
   &--birthday {
     max-width: 170px;
