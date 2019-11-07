@@ -393,11 +393,11 @@ $(function() {
             $('.song').hide();
             $(currentSong).show();
             $('html, body').animate({scrollTop: songsTop}, 500);
-            if (document.body.clientWidth >= 500) {
+            if (document.body.clientWidth > 500) {
                 Amplitude.playSongAtIndex(index);
             }
         } else {
-            if (document.body.clientWidth >= 500) {
+            if (document.body.clientWidth > 500) {
                 $('html, body').animate({scrollTop: songsTop}, 500);
                 $( ".songs-block" ).animate({minHeight: "100vh"}, 500 );
                 $(currentSong).animate({marginTop: "100vh"}, 500 ).show(0).animate({marginTop: "0"}, 500 );    
