@@ -96,7 +96,9 @@ if (playPromise !== null){
 
 var closeBtn = document.querySelector('.close');
 closeBtn.addEventListener('click', function() {
-  Amplitude.playSongAtIndex(0);
+  if (document.body.clientWidth >= 500) {
+    Amplitude.playSongAtIndex(0);
+  }
 });
 
 var range = document.querySelector('.amplitude-volume-slider');

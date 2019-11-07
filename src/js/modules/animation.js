@@ -374,25 +374,34 @@ $(function() {
     $('.songs-block a').on('click', function(evt){
         evt.preventDefault();
         var currentSong = $(this).attr('href');
+        var index = $(this).attr('data-index');
         var songsTop = Math.floor($('.songs-block').offset().top);
             $('.song').hide();
             $(currentSong).show();
             $('html, body').animate({scrollTop: songsTop}, 500);
+            if (document.body.clientWidth >= 500) {
+                Amplitude.playSongAtIndex(index);
+            }
     });
 
     $('.discography__album-songs a').on('click', function(evt){
         evt.preventDefault();
         var currentSong = $(this).attr('href');
         var songsTop = Math.floor($('.songs-block').offset().top);
+        var index = $(this).attr('data-index');
         if ($('.songs-block').height() > 2) {
             $('.song').hide();
             $(currentSong).show();
             $('html, body').animate({scrollTop: songsTop}, 500);
+            if (document.body.clientWidth >= 500) {
+                Amplitude.playSongAtIndex(index);
+            }
         } else {
             if (document.body.clientWidth >= 500) {
                 $('html, body').animate({scrollTop: songsTop}, 500);
                 $( ".songs-block" ).animate({minHeight: "100vh"}, 500 );
-                $(currentSong).animate({marginTop: "100vh"}, 500 ).show(0).animate({marginTop: "0"}, 500 );        
+                $(currentSong).animate({marginTop: "100vh"}, 500 ).show(0).animate({marginTop: "0"}, 500 );    
+                Amplitude.playSongAtIndex(index);
             } else {
                 $(currentSong).show(0);    
                 $('html, body').animate({scrollTop: songsTop}, 500);    
