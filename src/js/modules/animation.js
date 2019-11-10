@@ -20,14 +20,14 @@ window.CanvasSlideshow = function(t) {
         document.body.appendChild(r.view), r.view.style.objectFit = "cover", r.view.style.width = "100%", r.view.style.height = "100%", r.view.style.top = "0", r.view.style.left = "0", n.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT, i
         .filters = [o], n.scale.x = 2, n.scale.y = 2, n.rotation = 250, o.scale.set(t.displaceScale[0], t.displaceScale[1]), i.addChild(n)
     };
-    var s = new PIXI.Texture.fromImage('img/bg-ipad.jpg'),
+    var s = new PIXI.Texture.fromImage('img/bg-ipad2.jpg'),
         a = new PIXI.Sprite(s);
-    a.anchor.set(0.5), a.width = 840, a.height = 670, a.position.x = innerWidth / 2, a.y = innerHeight / 2, i.addChild(a);
+    a.anchor.set(0.5), a.width = 830, a.height = 830, a.position.x = innerWidth/2, a.y = innerHeight/2-150, i.addChild(a);
     var u = new PIXI.ticker.Ticker;
     u.autoStart = !0, u.add(function(e) {
         const s = o.scale.x;
         n.x += t.autoPlaySpeed[0] * e, n.y += t.autoPlaySpeed[1], s > 0 && (o.scale.set(s - t.autoPlaySpeed[2] * dispSpeed), dispSpeed = (.99 * dispSpeed).toFixed(3));
-        const u = (window.pageYOffset || document.documentElement.scrollTop) / (document.body.offsetHeight - innerHeight) * 100;
+        const u = (window.pageYOffset || document.documentElement.scrollTop) / (document.body.offsetHeight - innerHeight) * 40;
         zoomAmount = -.01 * u, isLoaded && a.scale.x <= 1 && !imageScale ? imageScale = {
         x: a.scale.x,
         y: a.scale.y
