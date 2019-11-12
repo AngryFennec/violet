@@ -22,7 +22,7 @@ window.CanvasSlideshow = function(t) {
     };
     var s = new PIXI.Texture.fromImage('img/bg-ipad2.jpg'),
         a = new PIXI.Sprite(s);
-    a.anchor.set(0.5), a.width = 830, a.height = 830, a.position.x = innerWidth/2, a.y = innerHeight/2-150, i.addChild(a);
+    a.anchor.set(0.5), a.width = 830, a.height = 830, a.position.x = innerWidth/2, a.y = innerHeight/2-100, i.addChild(a);
     var u = new PIXI.ticker.Ticker;
     u.autoStart = !0, u.add(function(e) {
         const s = o.scale.x;
