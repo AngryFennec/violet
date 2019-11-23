@@ -66,11 +66,12 @@
         &::after {
             position: fixed;
             content: "";
-            width: 100%;
+            bottom: 0;
+            right: 0;
             height: 100vh;
             top: 0;
             left: 0;
-            background: url('../img/bg-ipad2.jpg') no-repeat -100px 0;
+            background: url('../img/bg-ipad2.jpg') no-repeat -50px -50px;
             background-size: cover;
         }
     }

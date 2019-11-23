@@ -1,13 +1,12 @@
 .subscribe {
-
     background: url('../img/contacts-back.jpg') no-repeat 0 -277px;
     background-color: #FFF5DA;
     background-size: cover;
     color: $text-contact;
     padding-left: 10.2%;
-    padding-right: 10.2%;
+    padding-right: 24%;
     padding-top: 5.23%;
-    padding-bottom: 10.5%;
+    padding-bottom: 15.5%;
 }
 
 .subscribe__header {
@@ -102,7 +101,7 @@ color: #8B8492;
   color: $text-contact;
   border-bottom: 1px solid #230045;
   cursor: pointer;
-  margin-left: 550px;
+  margin-left: auto;
   margin-top: 20px;
 }
 
@@ -115,7 +114,7 @@ color: #8B8492;
         font-weight: 600;
       }
   color: #230045;
-  width: 85%;
+  width: 100%;
   max-width: 645px;
 }
 .subscribe__alert-link {
@@ -131,7 +130,7 @@ color: #8B8492;
   .subscribe {
     padding-top: 20px;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 100px;
     padding-bottom: 45px;
   }
 
