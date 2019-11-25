@@ -7,3 +7,4 @@
 //= modules/player.js
 //= modules/animation.js
 //= modules/form.js
+//= modules/range.js

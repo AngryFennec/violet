@@ -3,8 +3,8 @@
     var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
     $(this).css('background-image',
                 '-webkit-gradient(linear, left top, right top, '
-                + 'color-stop(' + val + ', #94A14E), '
-                + 'color-stop(' + val + ', #C5C5C5)'
+                + 'color-stop(' + val + ', #291449), '
+                + 'color-stop(' + val + ', #291449)'
                 + ')'
                 );
 });

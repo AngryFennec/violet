@@ -3,7 +3,7 @@
     width: 100%;
     height: 200px;
     position: fixed;
-    bottom: 20px;
+    bottom: 75px;
     left: 100px;
     z-index: 4;
     //background-color: rgba(255,255,255,0.4);
@@ -29,12 +29,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  color: #FFFFFF;
-
-  
-
-
-
+  color: #291449;
 
   div#list-screen {
 
@@ -55,11 +50,13 @@
     margin-top: 40px;
     cursor: pointer;
     color: white;
-    font-family: "Lato", sans-serif; }
+    font-family: "Lato", sans-serif;
+    color: #291449;
+  }
 
 
   div#player-bottom {
-    padding-left: 25px;
+    padding-left: 45px;
     padding-right: 25px;
   display: flex;}
     div#player-bottom div#control-container {
@@ -70,21 +67,21 @@
   margin-right: 35px;}
     div#player-bottom div#control-container div#prev-container {
       height: 60px;
-      padding-top: 18px; }
+      padding-top: 8px; }
       div#player-bottom div#control-container div#prev-container div#previous {
-        background: url("../img/fbd-btn.svg") no-repeat center center ;
+        background: url("../img/prev.svg") no-repeat center center ;
       //  background-size: contain;
-      width: 40px;
-      height: 25px;
+      width: 60px;
+      height: 55px;
         cursor: pointer;
         margin: auto;
       margin-right: 23px;}
     div#player-bottom div#control-container div#play-pause-container {
           height: 60px; }
       div#player-bottom div#control-container div#play-pause-container div#play-pause {
-        width: 20px;
-        height: 20px;
-padding-top: 40px;
+        width: 30px;
+        height: 40px;
+padding-top: 30px;
         cursor: pointer;
         margin: auto;
       margin-right: 23px;}
@@ -94,11 +91,11 @@ padding-top: 40px;
           background: url("../img/play.svg") no-repeat center center; }
     div#player-bottom div#control-container div#next-container {
       height: 60px;
-      padding-top: 18px; }
+      padding-top: 8px; }
       div#player-bottom div#control-container div#next-container div#next {
-        background: url("../img/ffd-btn.svg") no-repeat center center;
-        width: 40px;
-        height: 24px;
+        background: url("../img/next.svg") no-repeat center center;
+        width: 60px;
+        height: 55px;
         cursor: pointer;
         margin: auto; }
           div#player-bottom div#control-container div#repeat-container {
@@ -118,7 +115,7 @@ padding-top: 40px;
       text-align: center;
     display: flex;
   align-items: center;
-padding-top: 45px;}
+padding-top: 50px;}
       div#player-bottom div#volume-container img {
         display: block;
         float: left;
@@ -133,8 +130,9 @@ padding-top: 45px;}
     display: block;
         //margin-left: 10px;
       background: transparent;
+      color: #291449;
     height: 3px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #291449;
 outline: none;}
 
 
@@ -167,7 +165,7 @@ outline: none;}
         overflow: hidden;
         width: 80px;
         -webkit-appearance: none;
-        background-color: #9a905d;
+        background-color: #291449;
         outline: none;
       }
 
@@ -191,20 +189,20 @@ outline: none;}
   }
   /** FF*/
   input[type="range"]::-moz-range-progress {
-    background-color: #43e5f7;
+    background-color: #291449;
     outline: none;
   }
   input[type="range"]::-moz-range-track {
-    background-color: #9a905d;
+    background-color: #291449;
     outline: none;
   }
   /* IE*/
   input[type="range"]::-ms-fill-lower {
-    background-color: #43e5f7;
+    background-color: #291449;
     outline: none;
   }
   input[type="range"]::-ms-fill-upper {
-    background-color: #9a905d;
+    background-color: #291449;
     outline: none;
   }
 
