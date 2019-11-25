@@ -37,7 +37,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 28px;
-   
+
 }
 
 .discography__albums {
@@ -144,7 +144,7 @@
 
 .discography__album-song:hover a {
     position: relative;
-   
+
 
     &::after {
         transition: 1.5s ease;
@@ -182,7 +182,7 @@
     .discography__album {
         &--active {
             display: block;
-    
+
             & .discography__year {
             margin-right: 70px;
             }
@@ -203,14 +203,14 @@
     .discography__album-skin {
         margin-right: 40px;
     }
-    
+
 
     .discography__year {
         margin-left: 130px;
     }
     .discography__album {
         &--active {
-    
+
             & .discography__year {
                 margin-left: 0;
                 margin-right: 305px;
@@ -238,16 +238,16 @@
         & .discography__skin {
         opacity: 1
         }
-    
+
         &::before {
             width: 0;
         }
-    
+
         &:last-child::before {
             width: 0;
         }
     }
-    
+
 }
 
 @media (max-width: 858px) {
@@ -270,7 +270,7 @@
 
     .discography__album {
         &--active {
-    
+
             & .discography__year {
                 margin-left: 0;
                 margin-right: 230px;
@@ -282,7 +282,7 @@
 @media (max-width: 695px) {
     .discography__album {
         &--active {
-    
+
             & .discography__year {
                 margin-right: 50px;
             }
@@ -315,6 +315,7 @@
         width: 100%;
         max-width: 359px;
         height: auto;
+        margin-right: 0;
         margin-bottom: 6px;
     }
 
@@ -344,7 +345,7 @@
 
     .discography__album {
         &--active {
-    
+
             & .discography__name {
                 margin-left: 28px;
             }
