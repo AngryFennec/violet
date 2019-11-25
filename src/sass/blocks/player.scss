@@ -3,8 +3,8 @@
     width: 100%;
     height: 200px;
     position: fixed;
-    bottom: 75px;
-    left: 100px;
+    bottom: 0;
+    left: 4%;
     z-index: 4;
     //background-color: rgba(255,255,255,0.4);
     background-color: transparent;
@@ -27,8 +27,8 @@
   font-family: "DM Serif Display";
   font-style: italic;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 24px;
+  line-height: 33px;
   color: #291449;
 
   div#list-screen {
@@ -56,7 +56,7 @@
 
 
   div#player-bottom {
-    padding-left: 45px;
+    padding-left: 37px;
     padding-right: 25px;
   display: flex;}
     div#player-bottom div#control-container {
@@ -64,7 +64,7 @@
       padding-top: 38px;
       padding-bottom: 15px;
     display: flex;
-  margin-right: 35px;}
+  margin-right: 20px;}
     div#player-bottom div#control-container div#prev-container {
       height: 60px;
       padding-top: 8px; }
@@ -75,7 +75,7 @@
       height: 55px;
         cursor: pointer;
         margin: auto;
-      margin-right: 23px;}
+      margin-right: 10px;}
     div#player-bottom div#control-container div#play-pause-container {
           height: 60px; }
       div#player-bottom div#control-container div#play-pause-container div#play-pause {
@@ -84,7 +84,7 @@
 padding-top: 30px;
         cursor: pointer;
         margin: auto;
-      margin-right: 23px;}
+      margin-right: 10px;}
         div#player-bottom div#control-container div#play-pause-container div#play-pause.amplitude-playing {
           background: url("../img/pause.svg") no-repeat center center; }
         div#player-bottom div#control-container div#play-pause-container div#play-pause.amplitude-paused {
@@ -155,7 +155,7 @@ outline: none;}
 
       }
       .meta-data-container {
-        padding-left: 25px;
+        padding-left: 55px;
         padding-right: 25px;
       }
 
