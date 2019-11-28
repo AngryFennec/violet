@@ -50,6 +50,15 @@
         margin-bottom: 10px;
     }
 }
+@media (max-width: 860px) {
+  .cookie {
+    max-width: 550px;
+  }
+
+  .close {
+    right: 30px;
+  }
+}
 
 
 @media (max-width: 500px) {
