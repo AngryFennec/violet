@@ -1,7 +1,7 @@
 .cookie {
     display: flex;
     box-sizing: border-box;
-    padding: 40px 100px 27px 44px;
+    padding: 40px 100px 27px 40px;
     position: fixed;
     bottom: 20px;
     left: 50%;
@@ -53,10 +53,12 @@
 @media (max-width: 860px) {
   .cookie {
     max-width: 550px;
+    padding-left: 20px;
+    padding-right: 10%;
   }
 
   .close {
-    right: 30px;
+    right: 20px;
   }
 }
 
